@@ -2,25 +2,26 @@
 
 | Option          | type           | Required or Default                                     | description                                                  | Support version |
 | --------------- | -------------- | ------------------------------------------------------- | ------------------------------------------------------------ | --------------- |
-| **el**          | `String`       | **Required**.                                           | [object HTMLDivElement] 挂载在哪                             |                 |
-| **appId**       | `String`       | **Required**.                                           | 你的 App ID 详见 **Advance**                                 |                 |
-| **appKey**      | `String`       | **Required**.                                           | 你的 App Key,详见 **Advance**                                |                 |
-| **mode**        | `String`       | Default: `DesertsP`                                     | 详见表格底下备注                                             |                 |
-| **placeholder** | `String`       | Default: `null`                                         | 输入框占位符                                                 |                 |
-| **pathname**    | `String`       | Default: `location.pathname`                            | 文章路径                                                     |                 |
-| **math**        | `Boolean`      | Default: `true`                                         | 详见表格底下备注                                             |                 |
-| **md**          | `Boolean`      | Default:`true`                                          | 支持markdown                                                 |                 |
-| **dark**        | `Boolean`      | Default: `false`                                        | 黑暗模式                                                     |                 |
-| **lang**        | `String`       | Default: `navigator.language || navigator.userLanguage` | 详见表格底下备注                                             |                 |
-| **emoticonUrl** | `String Array` | Default: `['https://cdn.jsdelivr.net/npm/alus@latest']` | 详见表格底下备注                                             |                 |
-| **NoRecordIP**  | `Boolean`      | Default: `false`                                        | 不记录评论者IP                                               |                 |
-| **maxNest**     | `Number`       | Default: `6`                                            | 评论引用最大深度                                             |                 |
-| **pageSize**    | `Number`       | Default: `6`                                            | Pagination size.                                             |                 |
-| **visitor**     | `Boolean`      | Default: `true`                                         | Only `article reading access statistics`and `whole site access statistics` are provided. |                 |
-| **serverURLs**  | `String`       | Default: `http[s]://[tab/us].avoscloud.com`             | 详见表格底下备注                                             |                 |
-| **barrager**    | `Number`       | Default: `1`                                            | 详见表格底下备注                                             |                 |
-| **role**        | `String`       | Default: `admin`                                        | 详见表格底下备注                                             |                 |
-| **closeCSS**    | `Boolean`      | Default: `false`                                        | 关闭加载动画                                                 |                 |
+| **el**          | `String`       | **Required**.                                           | [object HTMLDivElement] 挂载在哪                             | `>=4.x`         |
+| **appId**       | `String`       | **Required**.                                           | 你的 App ID 详见 **Advance**                                 | `>=4.x`         |
+| **appKey**      | `String`       | **Required**.                                           | 你的 App Key,详见 **Advance**                                | `>=4.x`         |
+| **mode**        | `String`       | Default: `DesertsP`                                     | 详见表格底下备注                                             | `>=4.x`         |
+| **placeholder** | `String`       | Default: `null`                                         | 输入框占位符                                                 | `>=4.x`         |
+| **pathname**    | `String`       | Default: `location.pathname`                            | 文章路径                                                     | `>=4.x`         |
+| **math**        | `Boolean`      | Default: `true`                                         | 详见表格底下备注                                             | `>=4.x`         |
+| **md**          | `Boolean`      | Default:`true`                                          | 支持markdown                                                 | `>=4.x`         |
+| **dark**        | `Boolean`      | Default: `false`                                        | 黑暗模式                                                     | `>=4.x`         |
+| **lang**        | `String`       | Default: `navigator.language or navigator.userLanguage` | 详见表格底下备注                                             | `>=4.x`         |
+| **emoticonUrl** | `String Array` | Default: `['https://cdn.jsdelivr.net/npm/alus@latest']` | 详见表格底下备注                                             | `>=4.x`         |
+| **NoRecordIP**  | `Boolean`      | Default: `false`                                        | 不记录评论者IP                                               | `>=4.x`         |
+| **maxNest**     | `Number`       | Default: `6`                                            | 评论引用最大深度                                             | `>=4.x`         |
+| **pageSize**    | `Number`       | Default: `6`                                            | Pagination size.                                             | `>=4.x`         |
+| **visitor**     | `Boolean`      | Default: `true`                                         | Only `article reading access statistics`and `whole site access statistics` are provided. | `>=4.x`         |
+| **serverURLs**  | `String`       | Default: `http[s]://[tab/us].avoscloud.com`             | 详见表格底下备注                                             | `>=4.x`         |
+| **barrager**    | `Number`       | Default: `1`                                            | 详见表格底下备注                                             | `>=4.x`         |
+| **role**        | `String`       | Default: `admin`                                        | 详见表格底下备注                                             | `>=4.x`         |
+| **closeCSS**    | `Boolean`      | Default: `false`                                        | 关闭加载动画                                                 | `>=4.x`         |
+| **enableQQ**    | `Boolean`      | Default: `false`                                        | **Deleted**  The details are Under the table                 | `<=3.x`         |
 |                 |                |                                                         |                                                              |                 |
 
 + **el** `String`
@@ -75,12 +76,11 @@
   + Default: `1`
   
   + Options: 
-  + `0`  Close Comment barrage.
+    + `0`  Close Comment barrage.
     + `1`  Load a round of Comment barrage.
     + `2`  Load all round of Comment barrage
+  + Comment barrage. [Load only when the page is ***first*** loaded]
   
-
-Comment barrage. [Load only when the page is ***first*** loaded]
 
 - **role** `String`
 
@@ -90,6 +90,14 @@ Comment barrage. [Load only when the page is ***first*** loaded]
   
   + [Valine-Android](https://github.com/yinhanlei/Valine-Android)  [Valine-iOS](https://github.com/xaoxuu/Valine-iOS) 
 
++ **enableQQ** `Boolean` | **deleted!!!**
+
+  + Default: `false`
+
+  + Enable QQ avatar API.
+
+  + > Since the QQ avatar API exposes the user's mailbox, the function of QQ avatar is **deleted** in MiniValine version 4.x.
+
 
 
 ## Style Options
@@ -98,7 +106,7 @@ Comment barrage. [Load only when the page is ***first*** loaded]
 
 | Option            | type     | Required or Default | description                                | Support version |
 | ----------------- | -------- | ------------------- | ------------------------------------------ | --------------- |
-| **adminEmailMd5** | `String` | Default:`null`      | The MD5 of Admin Email to show Admin Flag. |                 |
+| **adminEmailMd5** | `String` | Default:`null`      | The MD5 of Admin Email to show Admin Flag. | `>=4.x`         |
 |                   |          |                     |                                            |                 |
 
 
@@ -111,17 +119,17 @@ Comment barrage. [Load only when the page is ***first*** loaded]
 
 | Option        | type           | Required or Default | description                                                  | Support version |
 | ------------- | -------------- | ------------------- | ------------------------------------------------------------ | --------------- |
-|               |                |                     | visitor flag bellow                                          |                 |
-| **closeFlag** | `Boolean`      | Default: `false`    | Turn off visitor flag.                                       |                 |
-|               |                |                     | Visitor Flag **Local** Options bellow                        |                 |
-| **master**    | `String Array` | Default: `[]`       | The MD5 String Array of master Email to show master Flag.    |                 |
-| **friends**   | `String Array` | Default: `[]`       | The MD5 String Array of friends Email to show friends Flag.  |                 |
-| **tagMeta**   | `String Array` | Default: `[]`       | The String Array of Words to show Flag (only three).For Example: `tagMeta: ["Master", "Friend", "Visitor"]` |                 |
-|               |                |                     | Visitor Flag **Cloud** Option bellow                         |                 |
-| **cloudflag** | `Boolean`      | Default: `false`    | 详见表格底下备注                                             |                 |
-|               |                |                     | xCss Style mode **Others Options** bellow                    |                 |
-| **region**    | `Boolean`      | Default: `false`    | 详见表格底下备注                                             |                 |
-| **closeUA**   | `Boolean`      | Default: `false`    | Turn off UA detection.                                       |                 |
+|               |                |                     | visitor flag bellow                                          | `>=4.x`         |
+| **closeFlag** | `Boolean`      | Default: `false`    | Turn off visitor flag.                                       | `>=4.x`         |
+|               |                |                     | Visitor Flag **Local** Options bellow                        | `>=4.x`         |
+| **master**    | `String Array` | Default: `[]`       | The MD5 String Array of master Email to show master Flag.    | `>=4.x`         |
+| **friends**   | `String Array` | Default: `[]`       | The MD5 String Array of friends Email to show friends Flag.  | `>=4.x`         |
+| **tagMeta**   | `String Array` | Default: `[]`       | The String Array of Words to show Flag (only three).For Example: `tagMeta: ["Master", "Friend", "Visitor"]` | `>=4.x`         |
+|               |                |                     | Visitor Flag **Cloud** Option bellow                         | `>=4.x`         |
+| **cloudflag** | `Boolean`      | Default: `false`    | 详见表格底下备注                                             | `>=4.x`         |
+|               |                |                     | xCss Style mode **Others Options** bellow                    | `>=4.x`         |
+| **region**    | `Boolean`      | Default: `false`    | 详见表格底下备注                                             | `>=4.x`         |
+| **closeUA**   | `Boolean`      | Default: `false`    | Turn off UA detection.                                       | `>=4.x`         |
 
 
 
@@ -131,11 +139,10 @@ Comment barrage. [Load only when the page is ***first*** loaded]
   
   + If `cloudflag` is turned on, the setting of `Visitor Flag Local Options` is invalid.
 
-  + [How to Set Visitor Flag Cloud Option For xCss Style mode?](https://github.com/MiniValine/MiniValine/blob/master/.github/FAQ.md#how-to-set-visitor-flag-cloud-option-for-xcss-style-mode)
+  + How to Set Visitor Flag Cloud Option For xCss Style mode? 见下面Advance高级设置
 
 - **region** `Boolean`
-
-  + Default: `false`
++ Default: `false`
   
   + According to IP output area.
   
@@ -222,11 +229,11 @@ For example:
 
 [alus](https://github.com/MiniValine/alus): MiniValine's default emoji.
 
-#### 1.Create a GitHub repository named [alus](https://github.com/MiniValine/alus).
+ 1.Create a GitHub repository named [alus](https://github.com/MiniValine/alus).
 
-#### 2.Add custom emoji picture files in GitHub Repository.
+ 2.Add custom emoji picture files in GitHub Repository.
 
-#### 3.The most important is that you need to add [index.json](https://github.com/MiniValine/alus/blob/master/index.json) in the root directory.
+ 3.The most important is that you need to add [index.json](https://github.com/MiniValine/alus/blob/master/index.json) in the root directory.
 
 [index.json](https://github.com/MiniValine/alus/blob/master/index.json) must obey such rules:
 
@@ -246,7 +253,7 @@ For example:
 {"0":['emoticonA.png','emoticonB.gif','emoticonC.jpeg','emoticonD.jpg']}
 ```
 
-#### 4.Get CDN link
+ 4.Get CDN link
 
 jsdelivr CDN link : https://cdn.jsdelivr.net/gh/[YourGitHubUsername]/[GitHubRepositoryName]
 
@@ -258,7 +265,7 @@ For example:
 https://cdn.jsdelivr.net/gh/MiniValine/alus
 ```
 
-#### 5.Modify MiniValine configuration item `emoticonUrl`
+ 5.Modify MiniValine configuration item `emoticonUrl`
 
 
 ```

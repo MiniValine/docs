@@ -2,25 +2,26 @@
 
 | Option          | type           | Required or Default                                     | description                                                  | Support version |
 | --------------- | -------------- | ------------------------------------------------------- | ------------------------------------------------------------ | --------------- |
-| **el**          | `String`       | **Required**.                                           | The details are Under the table                              |                 |
-| **appId**       | `String`       | **Required**.                                           | Your App ID, detail from **Advace**                          |                 |
-| **appKey**      | `String`       | **Required**.                                           | Your App Key,detail from **Advance**                         |                 |
-| **mode**        | `String`       | Default: `DesertsP`                                     | The details are Under the table                              |                 |
-| **placeholder** | `String`       | Default: `null`                                         | Input Placeholder                                            |                 |
-| **pathname**    | `String`       | Default: `location.pathname`                            | The pathname of the page.                                    |                 |
-| **math**        | `Boolean`      | Default: `true`                                         | The details are Under the table                              |                 |
-| **md**          | `Boolean`      | Default:`true`                                          | Support Markdown.                                            |                 |
-| **dark**        | `Boolean`      | Default: `false`                                        | Dark model.                                                  |                 |
-| **lang**        | `String`       | Default: `navigator.language || navigator.userLanguage` | The details are Under the table                              |                 |
-| **emoticonUrl** | `String Array` | Default: `['https://cdn.jsdelivr.net/npm/alus@latest']` | The details are Under the table                              |                 |
-| **NoRecordIP**  | `Boolean`      | Default: `false`                                        | Do not record commenter IP.                                  |                 |
-| **maxNest**     | `Number`       | Default: `6`                                            | Sub-comment maximum nesting depth.                           |                 |
-| **pageSize**    | `Number`       | Default: `6`                                            | Pagination size.                                             |                 |
-| **visitor**     | `Boolean`      | Default: `true`                                         | Only `article reading access statistics`and `whole site access statistics` are provided. |                 |
-| **serverURLs**  | `String`       | Default: `http[s]://[tab/us].avoscloud.com`             | The details are Under the table                              |                 |
-| **barrager**    | `Number`       | Default: `1`                                            | The details are Under the table                              |                 |
-| **role**        | `String`       | Default: `admin`                                        | The details are Under the table                              |                 |
-| **closeCSS**    | `Boolean`      | Default: `false`                                        | Turn off loading CSS.                                        |                 |
+| **el**          | `String`       | **Required**.                                           | The details are Under the table                              | `>=4.x`         |
+| **appId**       | `String`       | **Required**.                                           | Your App ID, detail from **Advace**                          | `>=4.x`         |
+| **appKey**      | `String`       | **Required**.                                           | Your App Key,detail from **Advance**                         | `>=4.x`         |
+| **mode**        | `String`       | Default: `DesertsP`                                     | The details are Under the table                              | `>=4.x`         |
+| **placeholder** | `String`       | Default: `null`                                         | Input Placeholder                                            | `>=4.x`         |
+| **pathname**    | `String`       | Default: `location.pathname`                            | The pathname of the page.                                    | `>=4.x`         |
+| **math**        | `Boolean`      | Default: `true`                                         | The details are Under the table                              | `>=4.x`         |
+| **md**          | `Boolean`      | Default:`true`                                          | Support Markdown.                                            | `>=4.x`         |
+| **dark**        | `Boolean`      | Default: `false`                                        | Dark model.                                                  | `>=4.x`         |
+| **lang**        | `String`       | Default: `navigator.language or navigator.userLanguage` | The details are Under the table                              | `>=4.x`         |
+| **emoticonUrl** | `String Array` | Default: `['https://cdn.jsdelivr.net/npm/alus@latest']` | The details are Under the table                              | `>=4.x`         |
+| **NoRecordIP**  | `Boolean`      | Default: `false`                                        | Do not record commenter IP.                                  | `>=4.x`         |
+| **maxNest**     | `Number`       | Default: `6`                                            | Sub-comment maximum nesting depth.                           | `>=4.x`         |
+| **pageSize**    | `Number`       | Default: `6`                                            | Pagination size.                                             | `>=4.x`         |
+| **visitor**     | `Boolean`      | Default: `true`                                         | Only `article reading access statistics`and `whole site access statistics` are provided. | `>=4.x`         |
+| **serverURLs**  | `String`       | Default: `http[s]://[tab/us].avoscloud.com`             | The details are Under the table                              | `>=4.x`         |
+| **barrager**    | `Number`       | Default: `1`                                            | The details are Under the table                              | `>=4.x`         |
+| **role**        | `String`       | Default: `admin`                                        | The details are Under the table                              | `>=4.x`         |
+| **closeCSS**    | `Boolean`      | Default: `false`                                        | Turn off loading CSS.                                        | `>=4.x`         |
+| **enableQQ**    | `Boolean`      | Default: `false`                                        | **Deleted**  The details are Under the table                 | `<=3.x`         |
 |                 |                |                                                         |                                                              |                 |
 
 + **el** `String`
@@ -75,12 +76,11 @@
   + Default: `1`
   
   + Options: 
-  + `0`  Close Comment barrage.
+    + `0`  Close Comment barrage.
     + `1`  Load a round of Comment barrage.
     + `2`  Load all round of Comment barrage
+  + Comment barrage. [Load only when the page is ***first*** loaded]
   
-
-Comment barrage. [Load only when the page is ***first*** loaded]
 
 - **role** `String`
 
@@ -89,6 +89,14 @@ Comment barrage. [Load only when the page is ***first*** loaded]
   + Write permissions for the administrator role. 
   
   + [Valine-Android](https://github.com/yinhanlei/Valine-Android)  [Valine-iOS](https://github.com/xaoxuu/Valine-iOS) 
+
++ **enableQQ** `Boolean` | **deleted!!!**
+
+  + Default: `false`
+
+  + Enable QQ avatar API.
+
+  + > Since the QQ avatar API exposes the user's mailbox, the function of QQ avatar is **deleted** in MiniValine version 4.x.
 
 
 
@@ -99,7 +107,7 @@ Comment barrage. [Load only when the page is ***first*** loaded]
 
 | Option            | type     | Required or Default | description                                | Support version |
 | ----------------- | -------- | ------------------- | ------------------------------------------ | --------------- |
-| **adminEmailMd5** | `String` | Default:`null`      | The MD5 of Admin Email to show Admin Flag. |                 |
+| **adminEmailMd5** | `String` | Default:`null`      | The MD5 of Admin Email to show Admin Flag. | `>=4.x`         |
 |                   |          |                     |                                            |                 |
 
 
@@ -112,17 +120,17 @@ Comment barrage. [Load only when the page is ***first*** loaded]
 
 | Option        | type           | Required or Default | description                                                  | Support version |
 | ------------- | -------------- | ------------------- | ------------------------------------------------------------ | --------------- |
-|               |                |                     | visitor flag bellow                                          |                 |
-| **closeFlag** | `Boolean`      | Default: `false`    | Turn off visitor flag.                                       |                 |
-|               |                |                     | Visitor Flag **Local** Options bellow                        |                 |
-| **master**    | `String Array` | Default: `[]`       | The MD5 String Array of master Email to show master Flag.    |                 |
-| **friends**   | `String Array` | Default: `[]`       | The MD5 String Array of friends Email to show friends Flag.  |                 |
-| **tagMeta**   | `String Array` | Default: `[]`       | The String Array of Words to show Flag (only three).For Example: `tagMeta: ["Master", "Friend", "Visitor"]` |                 |
-|               |                |                     | Visitor Flag **Cloud** Option bellow                         |                 |
-| **cloudflag** | `Boolean`      | Default: `false`    | The details are Under the table                              |                 |
-|               |                |                     | xCss Style mode **Others Options** bellow                    |                 |
-| **region**    | `Boolean`      | Default: `false`    | The details are Under the table                              |                 |
-| **closeUA**   | `Boolean`      | Default: `false`    | Turn off UA detection.                                       |                 |
+|               |                |                     | visitor flag bellow                                          | `>=4.x`         |
+| **closeFlag** | `Boolean`      | Default: `false`    | Turn off visitor flag.                                       | `>=4.x`         |
+|               |                |                     | Visitor Flag **Local** Options bellow                        | `>=4.x`         |
+| **master**    | `String Array` | Default: `[]`       | The MD5 String Array of master Email to show master Flag.    | `>=4.x`         |
+| **friends**   | `String Array` | Default: `[]`       | The MD5 String Array of friends Email to show friends Flag.  | `>=4.x`         |
+| **tagMeta**   | `String Array` | Default: `[]`       | The String Array of Words to show Flag (only three).For Example: `tagMeta: ["Master", "Friend", "Visitor"]` | `>=4.x`         |
+|               |                |                     | Visitor Flag **Cloud** Option bellow                         | `>=4.x`         |
+| **cloudflag** | `Boolean`      | Default: `false`    | The details are Under the table                              | `>=4.x`         |
+|               |                |                     | xCss Style mode **Others Options** bellow                    | `>=4.x`         |
+| **region**    | `Boolean`      | Default: `false`    | The details are Under the table                              | `>=4.x`         |
+| **closeUA**   | `Boolean`      | Default: `false`    | Turn off UA detection.                                       | `>=4.x`         |
 
 
 
@@ -132,7 +140,7 @@ Comment barrage. [Load only when the page is ***first*** loaded]
   
   + If `cloudflag` is turned on, the setting of `Visitor Flag Local Options` is invalid.
 
-  + [How to Set Visitor Flag Cloud Option For xCss Style mode?](https://github.com/MiniValine/MiniValine/blob/master/.github/FAQ.md#how-to-set-visitor-flag-cloud-option-for-xcss-style-mode)
+  + How to Set Visitor Flag Cloud Option For xCss Style mode? **Advance below** please
 
 - **region** `Boolean`
 
@@ -223,11 +231,11 @@ For example:
 
 [alus](https://github.com/MiniValine/alus): MiniValine's default emoji.
 
-#### 1.Create a GitHub repository named [alus](https://github.com/MiniValine/alus).
+ 1.Create a GitHub repository named [alus](https://github.com/MiniValine/alus).
 
-#### 2.Add custom emoji picture files in GitHub Repository.
+ 2.Add custom emoji picture files in GitHub Repository.
 
-#### 3.The most important is that you need to add [index.json](https://github.com/MiniValine/alus/blob/master/index.json) in the root directory.
+ 3.The most important is that you need to add [index.json](https://github.com/MiniValine/alus/blob/master/index.json) in the root directory.
 
 [index.json](https://github.com/MiniValine/alus/blob/master/index.json) must obey such rules:
 
@@ -247,7 +255,7 @@ For example:
 {"0":['emoticonA.png','emoticonB.gif','emoticonC.jpeg','emoticonD.jpg']}
 ```
 
-#### 4.Get CDN link
+ 4.Get CDN link
 
 jsdelivr CDN link : https://cdn.jsdelivr.net/gh/[YourGitHubUsername]/[GitHubRepositoryName]
 
@@ -259,7 +267,7 @@ For example:
 https://cdn.jsdelivr.net/gh/MiniValine/alus
 ```
 
-#### 5.Modify MiniValine configuration item `emoticonUrl`
+ 5.Modify MiniValine configuration item `emoticonUrl`
 
 
 ```
