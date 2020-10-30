@@ -1,6 +1,6 @@
 ## Contributing
 
-We welcome you to join the development of MiniValine. Please see [contributing document][https://github.com/MiniValine/MiniValine/blob/master/.github/CONTRIBUTING.md]. 🤗
+We welcome you to join the development of MiniValine. Please see [contributing document](https://github.com/MiniValine/MiniValine/blob/master/.github/CONTRIBUTING.md). 🤗
 
 Also, we welcome PR to MiniValine.
 
@@ -10,5 +10,6 @@ Also, we welcome PR to MiniValine.
 
 This project exists thanks to all the people who contribute. 
 
-[![https://opencollective.com/minivaline/contributors.svg?width=890]][https://github.com/MiniValine/MiniValine/graphs/contributors]
+
+[![contributors-image](https://opencollective.com/minivaline/contributors.svg?width=890)](https://github.com/MiniValine/MiniValine/graphs/contributors)
 
