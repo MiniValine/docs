@@ -9,7 +9,7 @@
     <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/vue.css" />
-    <link rel="stylesheet" href="//assets.zlogs.net/docsify-sidebar-collapse@cdn/src/sidebar.css" />
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/src/sidebar.css" />
 </head>
 
 <body>
@@ -24,32 +24,41 @@
             search: 'auto',
             subMaxLevel: 6,
             notFoundPage: '404.md',
+            repo: 'MiniValine/MiniValine',
             alias: {
                 '/.*/SUMMARY.md': '/SUMMARY.md',
                 '/.*/navbar.md': '/Navbar.md',
             },
-            //docsify-minivaline example
+            //docsify-minivaline 示例
             MiniValine: {
                 appId: 'MEEC7WU3MbE2gfGU0apei89u-MdYXbMMI',
                 appKey: 'NQ91iwhxPcrPoAmSu4wpEJ8g',
-                placeholder: 'Write a Comment',
-                //More Options https://minivaline.github.io/docs/en/#/Options   except [el]
-				mode: 'xCss',
-				lang: 'zh-CN',
-				visitor: true,
-				region: true,
-				closeFlag: true,
-			}
-            //docsify-minivaline example
+                placeholder: '评论一下吧~',
+                mode: 'xCss',
+                lang: 'zh-CN',
+                visitor: true,
+                region: true,
+                closeFlag: true,
+                //更多选项 https://minivaline.js.org/docs/en/#/Options   除了 [el] 选项，这个已经在插件里体现了
+            },
+            //docsify-minivaline 示例
+            plugins: [
+                function (hook, vm) {
+                    hook.beforeEach(function (html) {
+                        var url = 'https://github.com/MiniValine/docs/tree/main/cn/' + vm.route.file;
+                        var editHtml = '[📝 编辑本页](' + url + ')\n';
+                        return (editHtml + html);
+                    });
+                }
+            ]
         }
     </script>
     <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
-    <!-- docsify-minivaline example -->
+    <!-- docsify-minivaline 示例 -->
     <script src='//cdn.jsdelivr.net/npm/minivaline@latest/dist/MiniValine.min.js'></script>
     <script src="//cdn.jsdelivr.net/npm/docsify-minivaline@latest/dist/docsify-minivaline.min.js"></script>
-    <!-- docsify-minivaline example -->
+    <!-- docsify-minivaline 示例 -->
     <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
-    <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/ga.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
 </body>

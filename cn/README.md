@@ -31,4 +31,7 @@
 
 [GPL-3.0](https://github.com/MiniValine/MiniValine/blob/master/LICENSE)
 
+
+
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FMiniValine%2FMiniValine.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FMiniValine%2FMiniValine?ref=badge_large)
+
