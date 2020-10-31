@@ -21,12 +21,14 @@
 > MiniValine is a simple and minimalist comment system based on Leancloud
 ------------------------------
 
-**[Live Demo](https://minivaline.github.io)**
-
-**[Awesome MiniValine](https://github.com/MiniValine/AWESOME-MiniValine)**
-
-**[MiniValine FAQs](https://github.com/MiniValine/MiniValine/blob/master/.github/FAQ.md)**
-
-**[Purge Jsdelivr CDN Cache](https://purge.jsdelivr.net/npm/minivaline)**
+**[Demo](https://minivaline.github.io)** | **[Docs](https://minivaline.js.org/docs/)** | **[FAQs](https://minivaline.js.org/docs/en/#/FAQ)** | **[Awesome](https://github.com/MiniValine/AWESOME-MiniValine)**
 
 
+
+
+
+## License
+
+[GPL-3.0](https://github.com/MiniValine/MiniValine/blob/master/LICENSE)
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FMiniValine%2FMiniValine.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FMiniValine%2FMiniValine?ref=badge_large)

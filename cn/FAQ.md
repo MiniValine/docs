@@ -20,6 +20,14 @@ Here  <https://minivaline.js.org/docs/en/#/Options?id=get-app-idapp-key>
 + [Option.emoticonUrl](https://minivaline.js.org/docs/en/#/Options?id=base-options)
 + [how-to-customize-emoticons](https://minivaline.js.org/docs/en/#/Options?id=how-to-customize-emoticons)
 
+
+
+## Sponsor？
+
+There are no immediate plans to accept donations,maybe.
+
+
+
 ## How to join the development of MiniValine?
 
 We welcome you to join the development of MiniValine. Please see [contributing document](https://minivaline.js.org/docs/en/#/Pre-Contribute). 🤗

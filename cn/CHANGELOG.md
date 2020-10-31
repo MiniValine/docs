@@ -1,10 +1,19 @@
-## Version 
+# Version 
+
+> + 注意对于修复的内容，我们建议你更新
+> + 对于添加的内容意味着之前的版本不支持
+> + 删除的功能意味着，不更改配置直接升级可能会出现问题
+> + 在改变版本之前，一定要提前测试配置
 
 ## 4.x （Latest）
 
 ### Add
 
++ Security Policy
+
 ### Fix
+
++ TODO
 
 ### Del
 
@@ -16,15 +25,15 @@
 
 ### Add
 
-+ 
++ TODO
 
 ### Fix
 
-+ 
++ TODO
 
 ### Del
 
-+ 
++ TODO
 
 ----
 
@@ -32,15 +41,15 @@
 
 ### Add
 
-+ 
++ TODO
 
 ### Fix
 
-+ 
++ TODO
 
 ### Del
 
-+ 
++ TODO
 
 ----
 
@@ -48,12 +57,12 @@
 
 ### Add
 
-+ 
++ TODO
 
 ### Fix
 
-+ 
++ TODO
 
 ### Del
 
-+ 
++ TODO

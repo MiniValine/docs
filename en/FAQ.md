@@ -42,6 +42,16 @@ If you do not see your language listed, contact us and we will publish it.
 
 
 
+
+
+## Sponsor？
+
+There are no immediate plans to accept donations,maybe.
+
+
+
+
+
 # Advance
 
 ## How to improve the security of MiniValine?
