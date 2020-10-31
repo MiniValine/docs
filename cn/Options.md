@@ -9,8 +9,8 @@
 | Option          | type           | Required or Default                                     | description                                                  | Support version |
 | --------------- | -------------- | ------------------------------------------------------- | ------------------------------------------------------------ | --------------- |
 | **el**          | `String`       | **Required**.                                           | [object HTMLDivElement] 挂载在哪                             | `1.x~latest`    |
-| **appId**       | `String`       | **Required**.                                           | 你的 App ID 详见 [Advace](https://minivaline.js.org/docs/cn/#/Options?id=get-app-idapp-key) | `1.x~latest`    |
-| **appKey**      | `String`       | **Required**.                                           | 你的 App Key,详见 [Advace](https://minivaline.js.org/docs/cn/#/Options?id=get-app-idapp-key) | `1.x~latest`    |
+| **appId**       | `String`       | **Required**.                                           | 你的 App ID 详见 [Advance](https://minivaline.js.org/docs/cn/#/Options?id=get-app-idapp-key) | `1.x~latest`    |
+| **appKey**      | `String`       | **Required**.                                           | 你的 App Key,详见 [Advance](https://minivaline.js.org/docs/cn/#/Options?id=get-app-idapp-key) | `1.x~latest`    |
 | **mode**        | `String`       | Default: `DesertsP`                                     | 详见表格底下备注                                             | `2.x~latest`    |
 | **placeholder** | `String`       | Default: `null`                                         | 输入框占位符                                                 | `1.x~latest`    |
 | **pathname**    | `String`       | Default: `location.pathname`                            | 文章路径，详见表格底下备注                                   | `1.x~latest`    |

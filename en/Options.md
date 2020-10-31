@@ -9,8 +9,8 @@
 | Option          | type           | Required or Default                                     | description                                                  | Support version |
 | --------------- | -------------- | ------------------------------------------------------- | ------------------------------------------------------------ | --------------- |
 | **el**          | `String`       | **Required**.                                           | The details are Under the table                              | `1.x~latest`    |
-| **appId**       | `String`       | **Required**.                                           | Your App ID, detail from [Advace](https://minivaline.js.org/docs/en/#/Options?id=get-app-idapp-key) | `1.x~latest`    |
-| **appKey**      | `String`       | **Required**.                                           | Your App Key,detail from [Advace](https://minivaline.js.org/docs/en/#/Options?id=get-app-idapp-key) | `1.x~latest`    |
+| **appId**       | `String`       | **Required**.                                           | Your App ID, detail from [Advance](https://minivaline.js.org/docs/en/#/Options?id=get-app-idapp-key) | `1.x~latest`    |
+| **appKey**      | `String`       | **Required**.                                           | Your App Key,detail from [Advance](https://minivaline.js.org/docs/en/#/Options?id=get-app-idapp-key) | `1.x~latest`    |
 | **mode**        | `String`       | Default: `DesertsP`                                     | The details are Under the table                              | `2.x~latest`    |
 | **placeholder** | `String`       | Default: `null`                                         | Input Placeholder                                            | `1.x~latest`    |
 | **pathname**    | `String`       | Default: `location.pathname`                            | The pathname of the page,The details are Under the table     | `1.x~latest`    |
