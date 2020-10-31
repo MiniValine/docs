@@ -1,35 +1,59 @@
-## 4.x
+## Version 
 
-+ Add
-  + 
-+ Fix
-  + 
-+ Del
-  + Option.enableQQ
+## 4.x （Latest）
 
-## 3.X
+### Add
 
-+ Add
-  + 
-+ Fix
-  + 
-+ Del
-  + 
+### Fix
 
-## 2.X
+### Del
 
-+ Add
-  + 
-+ Fix
-  + 
-+ Del
-  + 
++ Del [Option.enableQQ](https://minivaline.js.org/docs/en/#/Options?id=base-options)
 
-## 1.X
+---
 
-+ Add
-  + 
-+ Fix
-  + 
-+ Del
-  + 
+## 3.x
+
+### Add
+
++ 
+
+### Fix
+
++ 
+
+### Del
+
++ 
+
+----
+
+## 2.x
+
+### Add
+
++ 
+
+### Fix
+
++ 
+
+### Del
+
++ 
+
+----
+
+## 1.x
+
+### Add
+
++ 
+
+### Fix
+
++ 
+
+### Del
+
++ 

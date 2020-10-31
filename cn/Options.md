@@ -81,7 +81,6 @@
     + `2`  Load all round of Comment barrage
   + Comment barrage. [Load only when the page is ***first*** loaded]
   
-
 - **role** `String`
 
   + Default: `admin`
@@ -156,9 +155,22 @@
 
 ### Get `App ID`/`App Key`
 
-**Get `App ID`/`App Key` from LeanCloud**  
-[Click here](https://console.leancloud.app/login.html#/signup) to register or login in `LeanCloud`.  
-[Click here](https://console.leancloud.app/applist.html#/newapp) Create new application in `LeanCloud`, and you will get `appId`/`appKey`.
+#### Get `App ID`/`App Key` from LeanCloud
+
++ [Click here](https://console.leancloud.app/login.html#/signup) 注册或登录 `LeanCloud`. （这是国际版教程，国内版类似）
++ [Click here](https://console.leancloud.app/applist.html#/newapp) 注册一个 `LeanCloud` 应用, 按照下面获取 `appId`/`appKey`.
+
+![image.png](https://upimage.alexhchu.com/2020/10/31/65b007f83f814.png)
+
+
+
+#### Add Security URL
+
+添加安全域名，就是要使用minivaline的地址，
+
+可以是https://yourname.github.io,也可以是自己的域名记得加上https或者http
+
+![image.png](https://upimage.alexhchu.com/2020/10/31/9de6ae76f83c1.png)
 
 
 

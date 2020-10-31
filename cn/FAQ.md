@@ -1,5 +1,49 @@
 # <div align="center">MiniValine FAQs</div>
 
+# Common
+
+## How to get appid and appkey?
+
+Here  <https://minivaline.js.org/docs/en/#/Options?id=get-app-idapp-key>
+
+
+
+## It not work?
+
++ Does some [options](https://minivaline.js.org/docs/en/#/Options), which important or necessary , is `null` in config.
++ The `el` options can't add in some plugins, eg [hexo-next-minivaline](https://github.com/MiniValine/hexo-next-minivaline),[docsify-minivaline](https://github.com/MiniValine/docsify-minivaline)
+
+
+
+## Add my own Emoji?
+
++ [Option.emoticonUrl](https://minivaline.js.org/docs/en/#/Options?id=base-options)
++ [how-to-customize-emoticons](https://minivaline.js.org/docs/en/#/Options?id=how-to-customize-emoticons)
+
+## How to join the development of MiniValine?
+
+We welcome you to join the development of MiniValine. Please see [contributing document](https://minivaline.js.org/docs/en/#/Pre-Contribute). 🤗
+
+Also, we welcome Issue or PR to MiniValine.
+
+
+
+## How to Add or Improve translation?
+
+-  Go to https://crowdin.com/project/minivaline
+
+-  Create a new account.
+
+-  Submit your request or Get in contact with us.
+
+`
+If you do not see your language listed, contact us and we will publish it.
+`
+
+
+
+# Advance
+
 ## How to improve the security of MiniValine?
 
 MiniValine version 4.x makes incompatible modification on the basis of MiniValine version 3.x to improve the security of MiniValine.
@@ -30,26 +74,7 @@ Specific implementation can refer to [related documents](https://developers.clou
 
 You can implement your own security policy by running JavaScript at the edge with [Cloudflare Workers](https://workers.cloudflare.com).
 
-
-## How to join the development of MiniValine?
-
-We welcome you to join the development of MiniValine. Please see [contributing document](https://github.com/MiniValine/MiniValine/blob/master/.github/CONTRIBUTING.md). 🤗
-
-Also, we welcome Issue or PR to MiniValine.
-
-
-
-## How to Add or Improve translation?
-
--  Go to https://crowdin.com/project/minivaline
-
--  Create a new account.
-
--  Submit your request or Get in contact with us.
-
-`
-If you do not see your language listed, contact us and we will publish it.
-`
+[@MiniValine/CF-LC](https://github.com/MiniValine/CF-LC)
 
 
 

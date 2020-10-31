@@ -81,7 +81,6 @@
     + `2`  Load all round of Comment barrage
   + Comment barrage. [Load only when the page is ***first*** loaded]
   
-
 - **role** `String`
 
   + Default: `admin`
@@ -158,9 +157,16 @@
 
 ### Get `App ID`/`App Key`
 
-**Get `App ID`/`App Key` from LeanCloud**  
-[Click here](https://console.leancloud.app/login.html#/signup) to register or login in `LeanCloud`.  
-[Click here](https://console.leancloud.app/applist.html#/newapp) Create new application in `LeanCloud`, and you will get `appId`/`appKey`.
+#### Get `App ID`/`App Key` from LeanCloud
+
++ [Click here](https://console.leancloud.app/login.html#/signup) to register or login in `LeanCloud`. 
++ [Click here](https://console.leancloud.app/applist.html#/newapp) Create new application in `LeanCloud`, and you will get `appId`/`appKey`.
+
+![image.png](https://upimage.alexhchu.com/2020/10/31/35aad44a146f8.png)
+
+#### Add Security URL
+
+![image.png](https://upimage.alexhchu.com/2020/10/31/d3a5e64db9e98.png)
 
 
 
