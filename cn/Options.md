@@ -75,14 +75,14 @@
 
 - Localization language key, en and zh-CN are currently available.
   - More i18n info: 
-  - [How to Add or Improve translation?](https://github.com/MiniValine/MiniValine/blob/master/.github/FAQ.md#how-to-add-or-improve-translation)
+  - [How to Add or Improve translation?](https://minivaline.js.org/docs/cn/#/Contribute?id=how-to-add-or-improve-translation)
   
 
 ### **emoticonUrl** `String Array`
 
 - Default: `['https://cdn.jsdelivr.net/npm/alus@latest']`
 - Expression Url.
-- [How to customize emoticons?](https://github.com/MiniValine/MiniValine/blob/master/.github/FAQ.md#how-to-customize-emoticons)
+- [How to customize emoticons?](https://minivaline.js.org/docs/cn/#/Options?id=how-to-customize-emoticons)
 
 ### **serverURLs** `String`
 
@@ -90,7 +90,7 @@
   
 + >  This configuration is suitable for domestic custom domain name users, the overseas version will be automatically detected (no need to fill in manually).
   
-+ [Try to use cloudflare workers edge computing to improve the security](https://github.com/MiniValine/MiniValine/blob/master/.github/FAQ.md#how-to-improve-the-security-of-minivaline)
++ [Try to use cloudflare workers edge computing to improve the security](https://minivaline.js.org/docs/en/#/FAQ?id=how-to-improve-the-security-of-minivaline)
 
 ### **barrager** `Number`
 

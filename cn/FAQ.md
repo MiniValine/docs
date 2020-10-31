@@ -86,7 +86,7 @@ You can implement your own security policy by running JavaScript at the edge wit
 
 
 
-### Try to be faster.
+## Try to be faster.
 
 The author uses a `Python` script to generate `index.json` here. The friends who have the ability can try it.
 

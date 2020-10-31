@@ -16,7 +16,7 @@
 | **pathname**    | `String`       | Default: `location.pathname`                            | The pathname of the page,The details are Under the table     | `1.x~latest`    |
 | **math**        | `Boolean`      | Default: `true`                                         | The details are Under the table                              | `1.x~latest`    |
 | **md**          | `Boolean`      | Default:`true`                                          | Support Markdown.                                            | `1.x~latest`    |
-| **dark**        | `Boolean`      | Default: `false`                                        | Dark model.                                                  | `3.x~latest`    |
+| **dark**        | `Boolean`      | Default: `false`                                        | [Dark model.](https://minivaline.js.org/docs/en/#/Options?id=how-to-add-dark-mode) | `3.x~latest`    |
 | **lang**        | `String`       | Default: `navigator.language or navigator.userLanguage` | The details are Under the table                              | `1.x~latest`    |
 | **emoticonUrl** | `String Array` | Default: `['https://cdn.jsdelivr.net/npm/alus@latest']` | The details are Under the table                              | `1.x~latest`    |
 | **NoRecordIP**  | `Boolean`      | Default: `false`                                        | Do not record commenter IP.                                  | `1.x~latest`    |
@@ -75,22 +75,23 @@
 
 - Localization language key, en and zh-CN are currently available.
   - More i18n info: 
-  - [How to Add or Improve translation?](https://github.com/MiniValine/MiniValine/blob/master/.github/FAQ.md#how-to-add-or-improve-translation)
+  - [How to Add or Improve translation?](https://minivaline.js.org/docs/en/#/Contribute?id=how-to-add-or-improve-translation)
   
 
 ### **emoticonUrl** `String Array`
 
 - Default: `['https://cdn.jsdelivr.net/npm/alus@latest']`
 - Expression Url.
-- [How to customize emoticons?](https://github.com/MiniValine/MiniValine/blob/master/.github/FAQ.md#how-to-customize-emoticons)
+- [How to customize emoticons?](https://minivaline.js.org/docs/en/#/Options?id=how-to-customize-emoticons)
 
-- **serverURLs** `String`
 
-  + Default: `http[s]://[tab/us].avoscloud.com`
-    
-  + >  This configuration is suitable for domestic custom domain name users, the overseas version will be automatically detected (no need to fill in manually).
-    
-  + [Try to use cloudflare workers edge computing to improve the security](https://github.com/MiniValine/MiniValine/blob/master/.github/FAQ.md#how-to-improve-the-security-of-minivaline)
+#### **serverURLs** `String`
+
++ Default: `http[s]://[tab/us].avoscloud.com`
+  
++ >  This configuration is suitable for domestic custom domain name users, the overseas version will be automatically detected (no need to fill in manually).
+  
++ [Try to use cloudflare workers edge computing to improve the security](https://minivaline.js.org/docs/en/#/FAQ?id=how-to-improve-the-security-of-minivaline)
 
 ### **barrager** `Number`
 
@@ -162,7 +163,7 @@
 
 + If `cloudflag` is turned on, the setting of `Visitor Flag Local Options` is invalid.
 
-+ How to Set Visitor Flag Cloud Option For xCss Style mode? **Advance below** please
++ How to Set Visitor Flag Cloud Option For xCss Style mode? [**Advance below** please](https://minivaline.js.org/docs/en/#/Options?id=how-to-set-visitor-flag-cloud-option-for-xcss-style-mode)
 
 #### **region** `Boolean`
 
