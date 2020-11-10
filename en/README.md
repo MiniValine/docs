@@ -15,7 +15,7 @@
 [![Mergify Status](https://img.shields.io/endpoint.svg?url=https://gh.mergify.io/badges/MiniValine/MiniValine&style=flat)](https://mergify.io)
 [![codecov](https://codecov.io/gh/MiniValine/MiniValine/branch/master/graph/badge.svg)](https://codecov.io/gh/MiniValine/MiniValine)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/9c203d6a0703457081c8d563a0b3b810)](https://www.codacy.com/gh/MiniValine/MiniValine?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=MiniValine/MiniValine&amp;utm_campaign=Badge_Grade)
-[![DeepScan grade](https://deepscan.io/api/teams/8202/projects/10351/branches/142143/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=8202&pid=10351&bid=142143)
+[![DeepScan grade](https://deepscan.io/api/teams/11674/projects/14601/branches/275411/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=11674&pid=14601&bid=275411)
 
 > MiniValine is a simple and minimalist comment system based on Leancloud
 ------------------------------
