@@ -3,7 +3,7 @@
 - High speed.`@1.x~latest`
 - Easy to customize.`@1.x~latest`
 - [Safe by default](https://jsxss.com/en/try.html).`@1.x~latest`
-- [Always compatible with IE](https://polyfill.io/).`@1.x~latest`
+- [Compatible](https://polyfill.io/).`@1.x~latest`
 - [Simple and lightweight](https://app.bundle-analyzer.com/gh/MiniValine/MiniValine).`@1.x~latest`
 - [Lazy loading](https://github.com/aFarkas/lazysizes) [picture emoji](https://github.com/MiniValine/alus).`@1.x~latest`
 - Emoticon category.`@3.x~latest`
