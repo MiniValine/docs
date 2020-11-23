@@ -28,7 +28,7 @@
 | **role**        | `String`       | Default: `admin`                                        | 详见表格底下备注                                             | `3.x~latest`    |
 | **closeCSS**    | `Boolean`      | Default: `false`                                        | 关闭加载动画                                                 | `4.x~latest`    |
 | **enableQQ**    | `Boolean`      | Default: `false`                                        | **Deleted**  The details are Under the table                 | `2.x~3.x`       |
-|                 |                |                                                         |                                                              |                 |
+| **backend**     | `String`       | Default: `lc`                                           | 详见表格底下备注                                             | `5.x~latest`    |
 
 ### **el** `String`
 
@@ -119,6 +119,19 @@
 + Enable QQ avatar API.
 
 + > Since the QQ avatar API exposes the user's mailbox, the function of QQ avatar is **deleted** in MiniValine version 4.x.
+
+### **backend** `String`
+
++ Default: `lc`
+
++ Options: 
+
+  + `lc`  Leancloud无后端应用模式.
+  + `waline`  使用 [waline](https://github.com/lizheming/waline) 作为后端程序.
+
++ > 注意： **serverURLs**需要修改为 Waline 的服务端地址。
+  >
+  > waline 后端配置请参考：https://github.com/lizheming/waline
 
 
 

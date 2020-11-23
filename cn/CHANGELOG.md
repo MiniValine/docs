@@ -6,7 +6,27 @@
 > + 删除的功能意味着，不更改配置直接升级可能会出现问题
 > + 在改变版本之前，一定要提前测试配置
 
-## 4.x （Latest）
+
+
+## 5.x （Latest）
+
+### Add
+
+- 适配对[walinel](https://github.com/lizheming/waline)后端数据交互
+
++ option.backend
+
+### Fix
+
++ Null
+
+### Del
+
++ Null
+
+
+
+## 4.x
 
 ### Add
 
@@ -15,7 +35,7 @@
 
 ### Fix
 
-+ Null
++ 修复潜在的原型污染
 
 ### Del
 
@@ -37,7 +57,8 @@
 
 ### Fix
 
-+ Null
++ 无法同时关闭 UA 和开启 region
++ Artitalk与MiniValine不兼容
 
 ### Del
 

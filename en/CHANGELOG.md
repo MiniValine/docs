@@ -6,7 +6,27 @@
 > + And the **deleted** ones mean that there may be some problems when **upgrading**. 
 > + Please **test the configuration** before plan to **change version**!
 
-## 4.x （Latest）
+
+
+## 5.x （Latest）
+
+### Add
+
+- Adaptive pairing [waline](https://github.com/lizheming/waline) Back end data interaction
+
++ option.backend
+
+### Fix
+
++ Null
+
+### Del
+
++ Null
+
+
+
+## 4.x 
 
 ### Add
 
@@ -15,7 +35,7 @@
 
 ### Fix
 
-+ Null
++ Remediation of potential prototype contamination
 
 ### Del
 
@@ -37,7 +57,8 @@
 
 ### Fix
 
-+ Null
++ Cannot close UA and open region at the same time
++ Artitalk is not compatible with minivaline
 
 ### Del
 

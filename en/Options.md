@@ -28,7 +28,7 @@
 | **role**        | `String`       | Default: `admin`                                        | The details are Under the table                              | `3.x~latest`    |
 | **closeCSS**    | `Boolean`      | Default: `false`                                        | Turn off loading CSS.                                        | `4.x~latest`    |
 | **enableQQ**    | `Boolean`      | Default: `false`                                        | **Deleted**  The details are Under the table                 | `2.x~3.x`       |
-|                 |                |                                                         |                                                              |                 |
+| **backend**     | `String`       | Default: `lc`                                           | The details are Under the table                              | `5.x~latest`    |
 
 ### **el** `String`
 
@@ -120,6 +120,19 @@
 + Enable QQ avatar API.
 
 + > Since the QQ avatar API exposes the user's mailbox, the function of QQ avatar is **deleted** in MiniValine version 4.x.
+
+### **backend** `String`
+
++ Default: `lc`
+
++ Options: 
+
+  + `lc`  Leancloud no back end application mode.
+  + `waline`  Use [waline](https://github.com/lizheming/waline) As the back-end program
+
++ >  **serverURLs ** needs to be changed to the server address of waline.
+  >
+  > For the backend configuration of waline, please refer to : https://github.com/lizheming/waline
 
 
 
