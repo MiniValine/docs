@@ -54,6 +54,10 @@ If you do not see your language listed, contact us and we will publish it.
 
 ## How to improve the security of MiniValine?
 
+**从5.x版本起MiniValine支持适配对[walinel](https://github.com/lizheming/waline)后端数据交互.**
+
+**[WHY](https://github.com/lizheming/waline/blob/master/docs/why.md)**
+
 MiniValine version 4.x makes incompatible modification on the basis of MiniValine version 3.x to improve the security of MiniValine.
 
 Since the QQ avatar API exposes the user's mailbox, the function of QQ avatar is deleted in MiniValine version 4.x.
@@ -81,4 +85,6 @@ We intercept user requests at the edge of the network and judge the validity of 
 Specific implementation can refer to [related documents](https://developers.cloudflare.com/workers/runtime-apis/request)
 
 You can implement your own security policy by running JavaScript at the edge with [Cloudflare Workers](https://workers.cloudflare.com).
+
+**使用 Cloudflare Workers 隐藏LC-Key和LC-Id**: [CF-LC](https://github.com/MiniValine/MiniValine/tree/master/CF-LC)
 
