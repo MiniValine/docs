@@ -56,9 +56,13 @@ There are no immediate plans to accept donations,maybe.
 
 ## How to improve the security of MiniValine?
 
-**From version 5. X, minivaline supports pairing [walinel](https://github.com/lizheming/waline) Back end data interaction**
+### Version 5.x
+
+**From version 5. X, MiniValine supports pairing [walinel](https://github.com/lizheming/waline) Back end data interaction**
 
 **[WHY](https://github.com/lizheming/waline/blob/master/docs/why.md)**
+
+### Version 4.x
 
 MiniValine version 4.x makes incompatible modification on the basis of MiniValine version 3.x to improve the security of MiniValine.
 

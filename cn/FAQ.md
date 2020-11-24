@@ -54,9 +54,13 @@ If you do not see your language listed, contact us and we will publish it.
 
 ## How to improve the security of MiniValine?
 
+### Version 5.x
+
 **从5.x版本起MiniValine支持适配对[walinel](https://github.com/lizheming/waline)后端数据交互.**
 
 **[WHY](https://github.com/lizheming/waline/blob/master/docs/why.md)**
+
+### Version 4.x
 
 MiniValine version 4.x makes incompatible modification on the basis of MiniValine version 3.x to improve the security of MiniValine.
 
