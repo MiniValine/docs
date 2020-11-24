@@ -4,21 +4,48 @@
 >
 > [Option Detail](https://minivaline.js.org/docs/en/#/Options)  |  [Release Version](https://www.npmjs.com/package/minivaline)  | [Version ChangeLog](https://minivaline.js.org/docs/en/#/CHANGELOG)
 
+## Mount Options
+
+> Some plugins,which has been installed before, may not be required,  **DO NOT** ADD Mount Options
+>
+> eg  [hexo-next-minivaline](https://github.com/MiniValine/hexo-next-minivaline) | [docsify-minivaline](https://github.com/MiniValine/docsify-minivaline) 
+
+| Option       | type     | Required or Default          | description                     | Support version | Waline    Support  |
+| ------------ | -------- | ---------------------------- | ------------------------------- | --------------- | ------------------ |
+| **el**       | `String` | **Required**.                | The details are Under the table | `1.x~latest`    | :white_check_mark: |
+| **pathname** | `String` | Default: `location.pathname` | The details are Under the table | `1.x~latest`    | :white_check_mark: |
+
+### **el** `String`
+
++ **Required**. [object HTMLDivElement]
+
++ > You can find example at [**Install**](https://minivaline.js.org/docs/en/#/Install)
+  >
+
+### **pathname** `String`
+
++ Default: `location.pathname`
+
++ The pathname of the page.
+
++ > You can find example at [**Install**](https://minivaline.js.org/docs/en/#/Install)
+  >
+
+
+
 ## Base Options
 
 | Option          | type           | Required or Default                                     | description                                                  | Support version | Waline    Support  |
 | --------------- | -------------- | ------------------------------------------------------- | ------------------------------------------------------------ | --------------- | ------------------ |
-| **el**          | `String`       | **Required**.                                           | The details are Under the table                              | `1.x~latest`    | :white_check_mark: |
 | **appId**       | `String`       | **Required**.                                           | Your App ID, detail from [Advance](https://minivaline.js.org/docs/en/#/Options?id=get-app-idapp-key) | `1.x~latest`    | :x:                |
 | **appKey**      | `String`       | **Required**.                                           | Your App Key,detail from [Advance](https://minivaline.js.org/docs/en/#/Options?id=get-app-idapp-key) | `1.x~latest`    | :x:                |
 | **mode**        | `String`       | Default: `DesertsP`                                     | The details are Under the table                              | `2.x~latest`    | :white_check_mark: |
 | **placeholder** | `String`       | Default: `null`                                         | Input Placeholder                                            | `1.x~latest`    | :white_check_mark: |
-| **pathname**    | `String`       | Default: `location.pathname`                            | The pathname of the page,The details are Under the table     | `1.x~latest`    | :white_check_mark: |
 | **math**        | `Boolean`      | Default: `true`                                         | The details are Under the table                              | `1.x~latest`    | :white_check_mark: |
 | **md**          | `Boolean`      | Default:`true`                                          | Support Markdown.                                            | `1.x~latest`    | :x:                |
 | **dark**        | `Boolean`      | Default: `false`                                        | [Dark model.](https://minivaline.js.org/docs/en/#/Options?id=how-to-add-dark-mode) | `3.x~latest`    | :white_check_mark: |
 | **lang**        | `String`       | Default: `navigator.language or navigator.userLanguage` | The details are Under the table                              | `1.x~latest`    | :white_check_mark: |
-| **emoticonUrl** | `String Array` | Default: `['https://cdn.jsdelivr.net/npm/alus@latest']` | The details are Under the table                              | `1.x~latest`    | :white_check_mark: |
+| **emoticonUrl** | `String Array` | The details are Under the table                         | The details are Under the table                              | `1.x~latest`    | :white_check_mark: |
 | **NoRecordIP**  | `Boolean`      | Default: `false`                                        | Do not record commenter IP.                                  | `1.x~latest`    | :x:                |
 | **maxNest**     | `Number`       | Default: `6`                                            | Sub-comment maximum nesting depth.                           | `1.x~latest`    | :white_check_mark: |
 | **pageSize**    | `Number`       | Default: `6`                                            | Pagination size.                                             | `1.x~latest`    | :white_check_mark: |
@@ -30,27 +57,8 @@
 | **enableQQ**    | `Boolean`      | Default: `false`                                        | **Deleted**  The details are Under the table                 | `2.x~3.x`       | :x:                |
 | **backend**     | `String`       | Default: `lc`                                           | The details are Under the table                              | `5.x~latest`    | :white_check_mark: |
 
-### **el** `String`
 
-+ **Required**. [object HTMLDivElement]
 
-+ > You can find example at [**Install**](https://minivaline.js.org/docs/en/#/Install)
-  >
-  > Some plugins, which has been installed before, may not be required, 
->
-  > eg  [hexo-next-minivaline](https://github.com/MiniValine/hexo-next-minivaline) | [docsify-minivaline](https://github.com/MiniValine/docsify-minivaline) **NOT** ADD this option
-
-### **pathname** `String`
-
-+ Default: `location.pathname`
-
-+ The pathname of the page.
-
-+ > You can find example at [**Install**](https://minivaline.js.org/docs/en/#/Install)
-  >
-  > Some plugins, which has been installed before, may not be required, 
-  >
-  > eg  [hexo-next-minivaline](https://github.com/MiniValine/hexo-next-minivaline) | [docsify-minivaline](https://github.com/MiniValine/docsify-minivaline) **NOT** ADD this option
 
 ### **mode** `String`
 
@@ -80,12 +88,43 @@
 
 ### **emoticonUrl** `String Array`
 
-- Default: `['https://cdn.jsdelivr.net/npm/alus@latest']`
-- Expression Url.
-- [How to customize emoticons?](https://minivaline.js.org/docs/en/#/Options?id=how-to-customize-emoticons)
+- Default:`['https://cdn.jsdelivr.net/npm/alus@latest']`
+
+- PAY ATTENTION
+
+  - json style 
+
+    - ```yaml
+      {
+      	"emoticonUrl": [
+      		"https://cdn.jsdelivr.net/npm/alus@latest",
+      		"https://cdn.jsdelivr.net/gh/MiniValine/qq@latest",
+      		"https://cdn.jsdelivr.net/gh/MiniValine/Bilibilis@latest",
+      		"https://cdn.jsdelivr.net/gh/MiniValine/tieba@latest",
+      		"https://cdn.jsdelivr.net/gh/MiniValine/twemoji@latest",
+      		"https://cdn.jsdelivr.net/gh/MiniValine/weibo@latest"
+      	]
+      }
+      ```
+
+  - yaml style
+
+    - ```yml
+        emoticonUrl:
+          - https://cdn.jsdelivr.net/npm/alus@latest
+          - https://cdn.jsdelivr.net/gh/MiniValine/qq@latest
+          - https://cdn.jsdelivr.net/gh/MiniValine/Bilibilis@latest
+          - https://cdn.jsdelivr.net/gh/MiniValine/tieba@latest
+          - https://cdn.jsdelivr.net/gh/MiniValine/twemoji@latest
+          - https://cdn.jsdelivr.net/gh/MiniValine/weibo@latest
+      ```
+
+- Personality Expression Url.
+
+  - [How to customize emoticons?](https://minivaline.js.org/docs/en/#/Options?id=how-to-customize-emoticons)
 
 
-#### **serverURLs** `String`
+### **serverURLs** `String`
 
 + Default: `http[s]://[tab/us].avoscloud.com`
   
@@ -368,4 +407,14 @@ if __name__=="__main__":
         print(e)
 
 ```
+
+### How to add backend ?
+
+For the backend configuration of waline, please refer to : https://github.com/lizheming/waline
+
+> PAY ATTENTION!
+>
+> Some Options not support for waline
+
+
 

@@ -4,21 +4,50 @@
 >
 > [选项细节](https://minivaline.js.org/docs/cn/#/Options)  |  [发行版本](https://www.npmjs.com/package/minivaline)  | [版本更新日志](https://minivaline.js.org/docs/cn/#/CHANGELOG)
 
+## Mount Options
+
+> 注意一些插件不需要添加Mount Options（挂载选项），直接看底下的基础选项和样式选项
+>
+> 一些插件可能事先写在实现逻辑里面了，不需要再添加这项，如果再添加可能导致错误, 
+>
+> 比如 [hexo-next-minivaline](https://github.com/MiniValine/hexo-next-minivaline) | [docsify-minivaline](https://github.com/MiniValine/docsify-minivaline) **不要**添加这个选项
+
+| Option       | type     | Required or Default          | description                      | Support version | Waline    Support  |
+| ------------ | -------- | ---------------------------- | -------------------------------- | --------------- | ------------------ |
+| **el**       | `String` | **Required**.                | [object HTMLDivElement] 挂载在哪 | `1.x~latest`    | :white_check_mark: |
+| **pathname** | `String` | Default: `location.pathname` | 文章路径，详见表格底下备注       | `1.x~latest`    | :white_check_mark: |
+
+### **el** `String`
+
++ **Required**. [object HTMLDivElement]
+
++ > 即挂载在什么地方，可以在 [**Install**](https://minivaline.js.org/docs/cn/#/Install) 找到例子
+  >
+
+### **pathname** `String`
+
++ Default: `location.pathname`
+
++ The pathname of the page
+
++ > 即 文章路径 ，可以在 [**Install**](https://minivaline.js.org/docs/cn/#/Install) 找到例子
+  >
+
+
+
 ## Base Options
 
 | Option          | type           | Required or Default                                     | description                                                  | Support version | Waline    Support  |
 | --------------- | -------------- | ------------------------------------------------------- | ------------------------------------------------------------ | --------------- | ------------------ |
-| **el**          | `String`       | **Required**.                                           | [object HTMLDivElement] 挂载在哪                             | `1.x~latest`    | :white_check_mark: |
 | **appId**       | `String`       | **Required**.                                           | 你的 App ID 详见 [Advance](https://minivaline.js.org/docs/cn/#/Options?id=get-app-idapp-key) | `1.x~latest`    | :x:                |
 | **appKey**      | `String`       | **Required**.                                           | 你的 App Key,详见 [Advance](https://minivaline.js.org/docs/cn/#/Options?id=get-app-idapp-key) | `1.x~latest`    | :x:                |
 | **mode**        | `String`       | Default: `DesertsP`                                     | 详见表格底下备注                                             | `2.x~latest`    | :white_check_mark: |
 | **placeholder** | `String`       | Default: `null`                                         | 输入框占位符                                                 | `1.x~latest`    | :white_check_mark: |
-| **pathname**    | `String`       | Default: `location.pathname`                            | 文章路径，详见表格底下备注                                   | `1.x~latest`    | :white_check_mark: |
 | **math**        | `Boolean`      | Default: `true`                                         | 详见表格底下备注                                             | `1.x~latest`    | :white_check_mark: |
 | **md**          | `Boolean`      | Default:`true`                                          | 内置markdown                                                 | `1.x~latest`    | :x:                |
 | **dark**        | `Boolean`      | Default: `false`                                        | 黑暗模式                                                     | `3.x~latest`    | :white_check_mark: |
 | **lang**        | `String`       | Default: `navigator.language or navigator.userLanguage` | 详见表格底下备注                                             | `1.x~latest`    | :white_check_mark: |
-| **emoticonUrl** | `String Array` | Default: `['https://cdn.jsdelivr.net/npm/alus@latest']` | 详见表格底下备注                                             | `1.x~latest`    | :white_check_mark: |
+| **emoticonUrl** | `String Array` | 详见表格底下备注                                        | 详见表格底下备注                                             | `1.x~latest`    | :white_check_mark: |
 | **NoRecordIP**  | `Boolean`      | Default: `false`                                        | 不记录评论者IP                                               | `1.x~latest`    | :x:                |
 | **maxNest**     | `Number`       | Default: `6`                                            | 评论引用最大深度                                             | `1.x~latest`    | :white_check_mark: |
 | **pageSize**    | `Number`       | Default: `6`                                            | Pagination size.                                             | `1.x~latest`    | :white_check_mark: |
@@ -30,27 +59,7 @@
 | **enableQQ**    | `Boolean`      | Default: `false`                                        | **Deleted**  The details are Under the table                 | `2.x~3.x`       | :x:                |
 | **backend**     | `String`       | Default: `lc`                                           | 详见表格底下备注                                             | `5.x~latest`    | :white_check_mark: |
 
-### **el** `String`
 
-+ **Required**. [object HTMLDivElement]
-
-+ > 即挂载在什么地方，可以在 [**Install**](https://minivaline.js.org/docs/cn/#/Install) 找到例子
-  >
-  > 一些插件可能事先写在实现逻辑里面了，不需要再添加这项，如果再添加可能导致错误, 
->
-  > 比如 [hexo-next-minivaline](https://github.com/MiniValine/hexo-next-minivaline) | [docsify-minivaline](https://github.com/MiniValine/docsify-minivaline) **不要**添加这个选项
-
-### **pathname** `String`
-
-+ Default: `location.pathname`
-
-+ The pathname of the page
-
-+ > 即 文章路径 ，可以在 [**Install**](https://minivaline.js.org/docs/cn/#/Install) 找到例子
-  >
-  > 一些插件可能事先写在实现逻辑里面了，不需要再添加这项，如果再添加可能导致错误, 
-  >
-  > 比如 [hexo-next-minivaline](https://github.com/MiniValine/hexo-next-minivaline) | [docsify-minivaline](https://github.com/MiniValine/docsify-minivaline) **不要**添加这个选项
 
 ### **mode** `String`
 
@@ -80,9 +89,42 @@
 
 ### **emoticonUrl** `String Array`
 
-- Default: `['https://cdn.jsdelivr.net/npm/alus@latest']`
-- Expression Url.
-- [How to customize emoticons?](https://minivaline.js.org/docs/cn/#/Options?id=how-to-customize-emoticons)
+- Default:`['https://cdn.jsdelivr.net/npm/alus@latest']`
+
+- 注意json和yaml之间的差异
+
+  - json style 
+
+    - ```yaml
+      {
+      	"emoticonUrl": [
+      		"https://cdn.jsdelivr.net/npm/alus@latest",
+      		"https://cdn.jsdelivr.net/gh/MiniValine/qq@latest",
+      		"https://cdn.jsdelivr.net/gh/MiniValine/Bilibilis@latest",
+      		"https://cdn.jsdelivr.net/gh/MiniValine/tieba@latest",
+      		"https://cdn.jsdelivr.net/gh/MiniValine/twemoji@latest",
+      		"https://cdn.jsdelivr.net/gh/MiniValine/weibo@latest"
+      	]
+      }
+      ```
+
+  - yaml style
+
+    - ```yml
+        emoticonUrl:
+          - https://cdn.jsdelivr.net/npm/alus@latest
+          - https://cdn.jsdelivr.net/gh/MiniValine/qq@latest
+          - https://cdn.jsdelivr.net/gh/MiniValine/Bilibilis@latest
+          - https://cdn.jsdelivr.net/gh/MiniValine/tieba@latest
+          - https://cdn.jsdelivr.net/gh/MiniValine/twemoji@latest
+          - https://cdn.jsdelivr.net/gh/MiniValine/weibo@latest
+      ```
+
+- 自定义表情.
+
+  - [如何自定义表情?](https://minivaline.js.org/docs/cn/#/Options?id=how-to-customize-emoticons)
+
+
 
 ### **serverURLs** `String`
 
@@ -374,4 +416,14 @@ if __name__=="__main__":
 ```
 
 
+
+### How to add backend ?
+
+> 如何添加后端？
+
+支持waline后端，配置waline后端请参考 : https://github.com/lizheming/waline
+
+> 注意
+>
+> 一些选项可能不支持waline后端，在选项表都标明了
 
