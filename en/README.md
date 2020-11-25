@@ -32,3 +32,19 @@
 
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FMiniValine%2FMiniValine.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FMiniValine%2FMiniValine?ref=badge_large)
 
+
+
+This project upgrades the original `license` from `GPL V2 or later` to `GPL-3.0`
+
+https://github.com/xCss/Valine/blob/3fbddbf71dff61d35ccdfb18f39cbf4ac679330c/LICENSE#L293-L299
+
+```
+    Valine
+    Copyright (C) 2017-2018  xCss
+
+    This program is free software; you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation; either version 2 of the License, or
+    (at your option) any later version.
+```
+
