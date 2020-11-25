@@ -37,9 +37,11 @@
 
 
 
-本项目将原始 `LICENCE` 由 `GPL v2 or later` 升级为 `GPL-3.0`
+本项目将原始 `LICENCE` 由 `GPL v2 or later` 升级为 `GPL V3 or later` 重新分发.
 
-https://github.com/xCss/Valine/blob/3fbddbf71dff61d35ccdfb18f39cbf4ac679330c/LICENSE#L293-L299
+### 原始 `LICENCE`
+
+https://github.com/xCss/Valine/blob/3fbddbf71dff61d35ccdfb18f39cbf4ac679330c/LICENSE#L293-L309
 
 ```
     Valine
@@ -49,5 +51,35 @@ https://github.com/xCss/Valine/blob/3fbddbf71dff61d35ccdfb18f39cbf4ac679330c/LIC
     it under the terms of the GNU General Public License as published by
     the Free Software Foundation; either version 2 of the License, or
     (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License along
+    with this program; if not, write to the Free Software Foundation, Inc.,
+    51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+
 ```
 
+### MiniValine's `LICENCE`
+
+```
+    MiniValine
+    Copyright (C) 2019-now  MiniValine Team
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+```
