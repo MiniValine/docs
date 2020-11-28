@@ -58,7 +58,7 @@ There are no immediate plans to accept donations,maybe.
 
 ### Version 5.x
 
-**From version 5. X, MiniValine supports pairing [walinel](https://github.com/lizheming/waline) Back end data interaction**
+**From version 5. X, MiniValine supports pairing [waline](https://github.com/lizheming/waline) Back end data interaction**
 
 **[WHY](https://github.com/lizheming/waline/blob/master/docs/why.md)**
 

@@ -56,7 +56,7 @@ If you do not see your language listed, contact us and we will publish it.
 
 ### Version 5.x
 
-**从5.x版本起MiniValine支持适配对[walinel](https://github.com/lizheming/waline)后端数据交互.**
+**从5.x版本起MiniValine支持适配对[waline](https://github.com/lizheming/waline)后端数据交互.**
 
 **[WHY](https://github.com/lizheming/waline/blob/master/docs/why.md)**
 

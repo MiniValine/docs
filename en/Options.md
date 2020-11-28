@@ -321,7 +321,7 @@ For example:
 [index.json](https://github.com/MiniValine/alus/blob/master/index.json) must obey such rules:
 
 ``` json
-{"0":['A','B','C']}
+{"0":["A","B","C"]}
 ```
 
 * Only Replace `A`,`B`,`C` with your emoji picture file name. Note the file extension.
@@ -333,7 +333,7 @@ For example:
 * For example:
 
 ``` json
-{"0":['emoticonA.png','emoticonB.gif','emoticonC.jpeg','emoticonD.jpg']}
+{"0":["emoticonA.png","emoticonB.gif","emoticonC.jpeg","emoticonD.jpg"]}
 ```
 
  4.Get CDN link
@@ -391,8 +391,9 @@ def walkFile(FilePath):
     for root, dirs, files in os.walk(FilePath):
         for f in files:
             Path=os.path.join(root, f)
-            S+="'"+f+"',"
+            S+='"'+f+'",'
     S+="]}"
+    S=S.replace(",]}", "]}")
     print("正在写入文件，这通常不会太久...")
     with open("./index.json","wb") as ff:
         ff.write(S.encode("utf-8"))
