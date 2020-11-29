@@ -43,28 +43,28 @@
 
 ## Base Options
 
-| Option          | type           | Required or Default             | description                                                  | minivaline version<br />front-end | Waline   version<br />[back-end](https://www.npmjs.com/package/@waline/vercel) |
-| --------------- | -------------- | ------------------------------- | ------------------------------------------------------------ | --------------------------------- | ------------------------------------------------------------ |
-|                 |                |                                 |                                                              |                                   |                                                              |
-| **appId**       | `String`       | **Required**.                   | Your App ID, detail from [Advance](https://minivaline.js.org/docs/en/#/Options?id=get-app-idapp-key) | `1.x~latest`                      | :x:                                                          |
-| **appKey**      | `String`       | **Required**.                   | Your App Key,detail from [Advance](https://minivaline.js.org/docs/en/#/Options?id=get-app-idapp-key) | `1.x~latest`                      | :x:                                                          |
-| **mode**        | `String`       | Default: `DesertsP`             | The details are Under the table                              | `2.x~latest`                      | `0.8.6~latest`                                               |
-| **placeholder** | `String`       | Default: `null`                 | Input Placeholder                                            | `1.x~latest`                      | `0.8.6~latest`                                               |
-| **math**        | `Boolean`      | Default: `true`                 | The details are Under the table                              | `1.x~latest`                      | `0.8.6~latest`                                               |
-| **md**          | `Boolean`      | Default:`true`                  | Support Markdown.                                            | `1.x~latest`                      | :x:                                                          |
-| **dark**        | `Boolean`      | Default: `false`                | [Dark model.](https://minivaline.js.org/docs/en/#/Options?id=how-to-add-dark-mode) | `3.x~latest`                      | `0.8.6~latest`                                               |
-| **lang**        | `String`       | The details are Under the table | The details are Under the table                              | `1.x~latest`                      | `0.8.6~latest`                                               |
-| **emoticonUrl** | `String Array` | The details are Under the table | The details are Under the table                              | `1.x~latest`                      | `0.8.6~latest`                                               |
-| **NoRecordIP**  | `Boolean`      | Default: `false`                | Do not record commenter IP.                                  | `1.x~latest`                      | :x:                                                          |
-| **maxNest**     | `Number`       | Default: `6`                    | Sub-comment maximum nesting depth.                           | `1.x~latest`                      | `0.8.6~latest`                                               |
-| **pageSize**    | `Number`       | Default: `6`                    | Pagination size.                                             | `1.x~latest`                      | `0.8.6~latest`                                               |
-| **visitor**     | `Boolean`      | Default: `true`                 | Only `article reading access statistics`and `whole site access statistics` are provided. | `2.x~latest`                      | `0.8.6~latest`                                               |
-| **serverURLs**  | `String`       | The details are Under the table | The details are Under the table                              | `1.x~latest`                      | `0.8.6~latest`                                               |
-| **barrager**    | `Number`       | Default: `1`                    | The details are Under the table                              | `3.x~latest`                      | `0.8.6~latest`                                               |
-| **role**        | `String`       | Default: `admin`                | The details are Under the table                              | `3.x~latest`                      | :x:                                                          |
-| **closeCSS**    | `Boolean`      | Default: `false`                | Turn off loading CSS.                                        | `4.x~latest`                      | `0.8.6~latest`                                               |
-| **enableQQ**    | `Boolean`      | Default: `false`                | **Deleted**  The details are Under the table                 | `2.x~3.x`                         | :x:                                                          |
-| **backend**     | `String`       | Default: `lc`                   | The details are Under the table                              | `5.x~latest`                      | `0.8.6~latest`                                               |
+| Option          | type           | Required or Default | description                                                  | minivaline version<br />front-end | Waline   version<br />[back-end](https://www.npmjs.com/package/@waline/vercel) |
+| --------------- | -------------- | ------------------- | ------------------------------------------------------------ | --------------------------------- | ------------------------------------------------------------ |
+|                 |                |                     |                                                              |                                   |                                                              |
+| **appId**       | `String`       | **Required**.       | Your App ID, detail from [Advance](https://minivaline.js.org/docs/en/#/Options?id=get-app-idapp-key) | `1.x~latest`                      | :x:                                                          |
+| **appKey**      | `String`       | **Required**.       | Your App Key,detail from [Advance](https://minivaline.js.org/docs/en/#/Options?id=get-app-idapp-key) | `1.x~latest`                      | :x:                                                          |
+| **mode**        | `String`       | Default: `DesertsP` | The details are Under the table                              | `2.x~latest`                      | `0.8.6~latest`                                               |
+| **placeholder** | `String`       | Default: `null`     | Input Placeholder                                            | `1.x~latest`                      | `0.8.6~latest`                                               |
+| **math**        | `Boolean`      | Default: `true`     | The details are Under the table                              | `1.x~latest`                      | `0.8.6~latest`                                               |
+| **md**          | `Boolean`      | Default:`true`      | Support Markdown.                                            | `1.x~latest`                      | :x:                                                          |
+| **dark**        | `Boolean`      | Default: `false`    | [Dark model.](https://minivaline.js.org/docs/en/#/Options?id=how-to-add-dark-mode) | `3.x~latest`                      | `0.8.6~latest`                                               |
+| **lang**        | `String`       | Under the table     | The details are Under the table                              | `1.x~latest`                      | `0.8.6~latest`                                               |
+| **emoticonUrl** | `String Array` | Under the table     | The details are Under the table                              | `1.x~latest`                      | `0.8.6~latest`                                               |
+| **NoRecordIP**  | `Boolean`      | Default: `false`    | Do not record commenter IP.                                  | `1.x~latest`                      | :x:                                                          |
+| **maxNest**     | `Number`       | Default: `6`        | Sub-comment maximum nesting depth.                           | `1.x~latest`                      | `0.8.6~latest`                                               |
+| **pageSize**    | `Number`       | Default: `6`        | Pagination size.                                             | `1.x~latest`                      | `0.8.6~latest`                                               |
+| **visitor**     | `Boolean`      | Default: `true`     | Only **article reading access statistics**and <br />**whole site access statistics** are provided. | `2.x~latest`                      | `0.8.6~latest`                                               |
+| **serverURLs**  | `String`       | Under the table     | The details are Under the table                              | `1.x~latest`                      | `0.8.6~latest`                                               |
+| **barrager**    | `Number`       | Default: `1`        | The details are Under the table                              | `3.x~latest`                      | `0.8.6~latest`                                               |
+| **role**        | `String`       | Default: `admin`    | The details are Under the table                              | `3.x~latest`                      | :x:                                                          |
+| **closeCSS**    | `Boolean`      | Default: `false`    | Turn off loading CSS.                                        | `4.x~latest`                      | `0.8.6~latest`                                               |
+| **enableQQ**    | `Boolean`      | Default: `false`    | **Deleted**  The details are Under the table                 | `2.x~3.x`                         | :x:                                                          |
+| **backend**     | `String`       | Default: `lc`       | The details are Under the table                              | `5.x~latest`                      | `0.8.6~latest`                                               |
 
 
 
@@ -74,8 +74,8 @@
 - Default: `DesertsP`
 - Options: 
 
-  - `DesertsP` DesertsP Style mode.
-  - `xCss`  xCss Style mode.
+  - `DesertsP` DesertsP Style mode. [demo](https://minivaline.js.org/DesertsP.html)
+  - `xCss`  xCss Style mode. [demo](https://minivaline.js.org/xCss.html)
 
 ### **Math** `Boolean`: 
 
@@ -208,7 +208,7 @@
 |               |                |                     | Visitor Flag **Local** Options bellow                        |                    |                   |
 | **master**    | `String Array` | Default: `[]`       | The MD5 String Array of master Email to show master Flag.    | `2.x~latest`       | `0.8.6~latest`    |
 | **friends**   | `String Array` | Default: `[]`       | The MD5 String Array of friends Email to show friends Flag.  | `2.x~latest`       | `0.8.6~latest`    |
-| **tagMeta**   | `String Array` | Default: `[]`       | The String Array of Words to show Flag (only three).For Example: `tagMeta: ["Master", "Friend", "Visitor"]` | `2.x~latest`       | `0.8.6~latest`    |
+| **tagMeta**   | `String Array` | Default: `[]`       | The String Array of Words to show Flag (only three).<br />For Example: `tagMeta: ["Master", "Friend", "Visitor"]` | `2.x~latest`       | `0.8.6~latest`    |
 |               |                |                     | Visitor Flag **Cloud** Option bellow                         |                    |                   |
 | **cloudflag** | `Boolean`      | Default: `false`    | The details are Under the table                              | `3.x~latest`       | :x:               |
 |               |                |                     | xCss Style mode **Others Options** bellow                    |                    |                   |
