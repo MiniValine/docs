@@ -1,21 +1,27 @@
 # Options
 
-> 切换版本之前，或者使用`@latest`版本的时候，在大更新之前，关注一下 [更新日志](https://minivaline.js.org/docs/en/#/CHANGELOG) 。
->
-> [选项细节](https://minivaline.js.org/docs/cn/#/Options)  |  [发行版本](https://www.npmjs.com/package/minivaline)  | [版本更新日志](https://minivaline.js.org/docs/cn/#/CHANGELOG)
+!> 切换版本之前，或者使用`@latest`版本的时候，在大更新之前，关注一下 [更新日志](https://minivaline.js.org/docs/en/#/CHANGELOG) 。
+
+## Mode
+
+!> 注意下面是可选的模式组合，默认是minivaline和leancloud组合都支持的，而minivaline前端和waline后端要都支持的选项才能起作用，有一个不支持的，可能会发生未知错误。
+
+<iframe src="./assets/mode.cn.html" width="200" height="600"></iframe>
+
+
 
 ## Mount Options
 
-> 注意一些插件不需要添加Mount Options（挂载选项），直接看底下的基础选项和样式选项
->
+!> 注意一些插件不需要添加Mount Options（挂载选项），直接看底下的基础选项和样式选项
+
 > 一些插件可能事先写在实现逻辑里面了，不需要再添加这项，如果再添加可能导致错误, 
 >
 > 比如 [hexo-next-minivaline](https://github.com/MiniValine/hexo-next-minivaline) | [docsify-minivaline](https://github.com/MiniValine/docsify-minivaline) **不要**添加这个选项
 
-| Option       | type     | Required or Default          | description                      | Support version | Waline    Support  |
-| ------------ | -------- | ---------------------------- | -------------------------------- | --------------- | ------------------ |
-| **el**       | `String` | **Required**.                | [object HTMLDivElement] 挂载在哪 | `1.x~latest`    | :white_check_mark: |
-| **pathname** | `String` | Default: `location.pathname` | 文章路径，详见表格底下备注       | `1.x~latest`    | :white_check_mark: |
+| Option       | type     | Required or Default          | description                      | Minivaline<br />前端版本 | Waline    <br />后端版本 |
+| ------------ | -------- | ---------------------------- | -------------------------------- | ------------------------ | ------------------------ |
+| **el**       | `String` | **Required**.                | [object HTMLDivElement] 挂载在哪 | `1.x~latest`             | `0.8.6~latest`           |
+| **pathname** | `String` | Default: `location.pathname` | 文章路径，详见表格底下备注       | `1.x~latest`             | `0.8.6~latest`           |
 
 ### **el** `String`
 
@@ -37,27 +43,27 @@
 
 ## Base Options
 
-| Option          | type           | Required or Default                                     | description                                                  | Support version | Waline    Support  |
-| --------------- | -------------- | ------------------------------------------------------- | ------------------------------------------------------------ | --------------- | ------------------ |
-| **appId**       | `String`       | **Required**.                                           | 你的 App ID 详见 [Advance](https://minivaline.js.org/docs/cn/#/Options?id=get-app-idapp-key) | `1.x~latest`    | :x:                |
-| **appKey**      | `String`       | **Required**.                                           | 你的 App Key,详见 [Advance](https://minivaline.js.org/docs/cn/#/Options?id=get-app-idapp-key) | `1.x~latest`    | :x:                |
-| **mode**        | `String`       | Default: `DesertsP`                                     | 详见表格底下备注                                             | `2.x~latest`    | :white_check_mark: |
-| **placeholder** | `String`       | Default: `null`                                         | 输入框占位符                                                 | `1.x~latest`    | :white_check_mark: |
-| **math**        | `Boolean`      | Default: `true`                                         | 详见表格底下备注                                             | `1.x~latest`    | :white_check_mark: |
-| **md**          | `Boolean`      | Default:`true`                                          | 内置markdown                                                 | `1.x~latest`    | :x:                |
-| **dark**        | `Boolean`      | Default: `false`                                        | 黑暗模式                                                     | `3.x~latest`    | :white_check_mark: |
-| **lang**        | `String`       | Default: `navigator.language or navigator.userLanguage` | 详见表格底下备注                                             | `1.x~latest`    | :white_check_mark: |
-| **emoticonUrl** | `String Array` | 详见表格底下备注                                        | 详见表格底下备注                                             | `1.x~latest`    | :white_check_mark: |
-| **NoRecordIP**  | `Boolean`      | Default: `false`                                        | 不记录评论者IP                                               | `1.x~latest`    | :x:                |
-| **maxNest**     | `Number`       | Default: `6`                                            | 评论引用最大深度                                             | `1.x~latest`    | :white_check_mark: |
-| **pageSize**    | `Number`       | Default: `6`                                            | Pagination size.                                             | `1.x~latest`    | :white_check_mark: |
-| **visitor**     | `Boolean`      | Default: `true`                                         | Only `article reading access statistics`and `whole site access statistics` are provided. | `2.x~latest`    | :white_check_mark: |
-| **serverURLs**  | `String`       | Default: `http[s]://[tab/us].avoscloud.com`             | 详见表格底下备注                                             | `1.x~latest`    | :white_check_mark: |
-| **barrager**    | `Number`       | Default: `1`                                            | 详见表格底下备注                                             | `3.x~latest`    | :white_check_mark: |
-| **role**        | `String`       | Default: `admin`                                        | 详见表格底下备注                                             | `3.x~latest`    | :x:                |
-| **closeCSS**    | `Boolean`      | Default: `false`                                        | 关闭加载动画                                                 | `4.x~latest`    | :white_check_mark: |
-| **enableQQ**    | `Boolean`      | Default: `false`                                        | **Deleted**  The details are Under the table                 | `2.x~3.x`       | :x:                |
-| **backend**     | `String`       | Default: `lc`                                           | 详见表格底下备注                                             | `5.x~latest`    | :white_check_mark: |
+| Option          | type           | Required or Default | description                                                  | Minivaline<br />前端版本 | Waline    <br />后端版本 |
+| --------------- | -------------- | ------------------- | ------------------------------------------------------------ | ------------------------ | ------------------------ |
+| **appId**       | `String`       | **Required**.       | 你的 App ID 详见 [Advance](https://minivaline.js.org/docs/cn/#/Options?id=get-app-idapp-key) | `1.x~latest`             | :x:                      |
+| **appKey**      | `String`       | **Required**.       | 你的 App Key,详见 [Advance](https://minivaline.js.org/docs/cn/#/Options?id=get-app-idapp-key) | `1.x~latest`             | :x:                      |
+| **mode**        | `String`       | Default: `DesertsP` | 详见表格底下备注                                             | `2.x~latest`             | `0.8.6~latest`           |
+| **placeholder** | `String`       | Default: `null`     | 输入框占位符                                                 | `1.x~latest`             | `0.8.6~latest`           |
+| **math**        | `Boolean`      | Default: `true`     | 详见表格底下备注                                             | `1.x~latest`             | `0.8.6~latest`           |
+| **md**          | `Boolean`      | Default:`true`      | 内置markdown                                                 | `1.x~latest`             | :x:                      |
+| **dark**        | `Boolean`      | Default: `false`    | 黑暗模式                                                     | `3.x~latest`             | `0.8.6~latest`           |
+| **lang**        | `String`       | 详见表格底下备注    | 详见表格底下备注                                             | `1.x~latest`             | `0.8.6~latest`           |
+| **emoticonUrl** | `String Array` | 详见表格底下备注    | 详见表格底下备注                                             | `1.x~latest`             | `0.8.6~latest`           |
+| **NoRecordIP**  | `Boolean`      | Default: `false`    | 不记录评论者IP                                               | `1.x~latest`             | :x:                      |
+| **maxNest**     | `Number`       | Default: `6`        | 评论引用最大深度                                             | `1.x~latest`             | `0.8.6~latest`           |
+| **pageSize**    | `Number`       | Default: `6`        | Pagination size.                                             | `1.x~latest`             | `0.8.6~latest`           |
+| **visitor**     | `Boolean`      | Default: `true`     | Only `article reading access statistics`and `whole site access statistics` are provided. | `2.x~latest`             | `0.8.6~latest`           |
+| **serverURLs**  | `String`       | 详见表格底下备注    | 详见表格底下备注                                             | `1.x~latest`             | `0.8.6~latest`           |
+| **barrager**    | `Number`       | Default: `1`        | 详见表格底下备注                                             | `3.x~latest`             | `0.8.6~latest`           |
+| **role**        | `String`       | Default: `admin`    | 详见表格底下备注                                             | `3.x~latest`             | :x:                      |
+| **closeCSS**    | `Boolean`      | Default: `false`    | 关闭加载动画                                                 | `4.x~latest`             | `0.8.6~latest`           |
+| **enableQQ**    | `Boolean`      | Default: `false`    | **Deleted**  The details are Under the table                 | `2.x~3.x`                | :x:                      |
+| **backend**     | `String`       | Default: `lc`       | 详见表格底下备注                                             | `5.x~latest`             | `0.8.6~latest`           |
 
 
 
@@ -142,7 +148,7 @@
   + `0`  Close Comment barrage.
   + `1`  Load a round of Comment barrage.
   + `2`  Load all round of Comment barrage
-+ Comment barrage. [Load only when the page is ***first*** loaded]
++ Comment barrager. [Load only when the page is ***first*** loaded]
 
 ### **role** `String`
 
@@ -181,9 +187,9 @@
 
 ### DesertsP Style mode Options
 
-| Option            | type     | Required or Default | description                                | Support version | Waline    Support  |
-| ----------------- | -------- | ------------------- | ------------------------------------------ | --------------- | ------------------ |
-| **adminEmailMd5** | `String` | Default:`null`      | The MD5 of Admin Email to show Admin Flag. | `1.x~latest`    | :white_check_mark: |
+| Option            | type     | Required or Default | description                                | Minivaline<br />前端版本 | Waline    <br />后端版本 |
+| ----------------- | -------- | ------------------- | ------------------------------------------ | ------------------------ | ------------------------ |
+| **adminEmailMd5** | `String` | Default:`null`      | The MD5 of Admin Email to show Admin Flag. | `1.x~latest`             | :white_check_mark:       |
 
 
 
@@ -191,19 +197,19 @@
 
 
 
-| Option        | type           | Required or Default | description                                                  | Support version | Waline    Support  |
-| ------------- | -------------- | ------------------- | ------------------------------------------------------------ | --------------- | ------------------ |
-|               |                |                     | visitor flag bellow                                          |                 |                    |
-| **closeFlag** | `Boolean`      | Default: `false`    | Turn off visitor flag.                                       | `3.x~latest`    | :white_check_mark: |
-|               |                |                     | Visitor Flag **Local** Options bellow                        |                 |                    |
-| **master**    | `String Array` | Default: `[]`       | The MD5 String Array of master Email to show master Flag.    | `2.x~latest`    | :white_check_mark: |
-| **friends**   | `String Array` | Default: `[]`       | The MD5 String Array of friends Email to show friends Flag.  | `2.x~latest`    | :white_check_mark: |
-| **tagMeta**   | `String Array` | Default: `[]`       | The String Array of Words to show Flag (only three).For Example: `tagMeta: ["Master", "Friend", "Visitor"]` | `2.x~latest`    | :white_check_mark: |
-|               |                |                     | Visitor Flag **Cloud** Option bellow                         |                 |                    |
-| **cloudflag** | `Boolean`      | Default: `false`    | 详见表格底下备注                                             | `3.x~latest`    | :x:                |
-|               |                |                     | xCss Style mode **Others Options** bellow                    |                 |                    |
-| **region**    | `Boolean`      | Default: `false`    | 详见表格底下备注                                             | `3.x~latest`    | :x:                |
-| **closeUA**   | `Boolean`      | Default: `false`    | Turn off UA detection.                                       | `3.x~latest`    | :white_check_mark: |
+| Option        | type           | Required or Default | description                                                  | Minivaline<br />前端版本 | Waline    <br />后端版本 |
+| ------------- | -------------- | ------------------- | ------------------------------------------------------------ | ------------------------ | ------------------------ |
+|               |                |                     | visitor flag bellow                                          |                          |                          |
+| **closeFlag** | `Boolean`      | Default: `false`    | Turn off visitor flag.                                       | `3.x~latest`             | `0.8.6~latest`           |
+|               |                |                     | Visitor Flag **Local** Options bellow                        |                          |                          |
+| **master**    | `String Array` | Default: `[]`       | The MD5 String Array of master Email to show master Flag.    | `2.x~latest`             | `0.8.6~latest`           |
+| **friends**   | `String Array` | Default: `[]`       | The MD5 String Array of friends Email to show friends Flag.  | `2.x~latest`             | `0.8.6~latest`           |
+| **tagMeta**   | `String Array` | Default: `[]`       | The String Array of Words to show Flag (only three).For Example: `tagMeta: ["Master", "Friend", "Visitor"]` | `2.x~latest`             | `0.8.6~latest`           |
+|               |                |                     | Visitor Flag **Cloud** Option bellow                         |                          |                          |
+| **cloudflag** | `Boolean`      | Default: `false`    | 详见表格底下备注                                             | `3.x~latest`             | :x:                      |
+|               |                |                     | xCss Style mode **Others Options** bellow                    |                          |                          |
+| **region**    | `Boolean`      | Default: `false`    | 详见表格底下备注                                             | `3.x~latest`             | :x:                      |
+| **closeUA**   | `Boolean`      | Default: `false`    | Turn off UA detection.                                       | `3.x~latest`             | `0.8.6~latest`           |
 
 
 
