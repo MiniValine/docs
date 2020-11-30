@@ -2,6 +2,22 @@
 
 # Common
 
+## Can't load QQ avatar?
+
+无法加载QQ头像？
+
+在3.x版本的minivaline可以用，但是api会暴露访客邮箱，这是不安全的。
+
+我仍然想用？可以使用3.x版本，任何隐私泄露行为我们无法保证，或者可以尝试在4.x修改添加，但是我们不赞成这样做。
+
+我们尝试以一种更安全的方法加载QQ头像，在以后的某个版本可能以访客头像可选的形式出现，如可以是QQ头像、wordpress头像或者自定义相册头像。
+
+你可以加入我们，或者fork这个仓库并提交。
+
+敬请期待！
+
+
+
 ## How to get appid and appkey?
 
 Here  <https://minivaline.js.org/docs/en/#/Options?id=get-app-idapp-key>

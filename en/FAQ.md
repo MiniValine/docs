@@ -2,6 +2,18 @@
 
 # Common
 
+## Can't load QQ avatar?
+
+Since the QQ avatar API exposes the user's mailbox, the function of QQ avatar is deleted in MiniValine version 4.x.
+
+There is a plan to add QQ avatar in safe way, or use wordpress avatar or use Photo album for visiter.
+
+You can join us for fork this to develop it.
+
+Stay tuned.
+
+
+
 ## How to get appid and appkey?
 
 Here  <https://minivaline.js.org/docs/en/#/Options?id=get-app-idapp-key>
