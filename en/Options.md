@@ -14,21 +14,18 @@
 
 ## Mount Options
 
-!> Some plugins,which has been installed before, may not be required,  **DO NOT** ADD Mount Options
+!> Some plugins,which has been installed before, may not be required,  **DO NOT** ADD Mount Options, eg  [hexo-next-minivaline](https://github.com/MiniValine/hexo-next-minivaline) | [docsify-minivaline](https://github.com/MiniValine/docsify-minivaline) 
 
-> eg  [hexo-next-minivaline](https://github.com/MiniValine/hexo-next-minivaline) | [docsify-minivaline](https://github.com/MiniValine/docsify-minivaline) 
-
-| Option       | type     | Required or Default          | description                     | Minivaline version<br />front-end | Waline    version<br />[back-end](https://www.npmjs.com/package/@waline/vercel) |
-| ------------ | -------- | ---------------------------- | ------------------------------- | --------------------------------- | ------------------------------------------------------------ |
-| **el**       | `String` | **Required**.                | The details are Under the table | `1.x~latest`                      | `0.8.6~latest`                                               |
-| **pathname** | `String` | Default: `location.pathname` | The details are Under the table | `1.x~latest`                      | `0.8.6~latest`                                               |
+| Option       | type     | Required or Default          | Minivaline version<br />front-end | Waline    version<br />[back-end](https://www.npmjs.com/package/@waline/vercel) |
+| ------------ | -------- | ---------------------------- | --------------------------------- | ------------------------------------------------------------ |
+| **el**       | `String` | **Required**.                | `1.x~latest`                      | `0.8.6~latest`                                               |
+| **pathname** | `String` | Default: `location.pathname` | `1.x~latest`                      | `0.8.6~latest`                                               |
 
 ### **el** `String`
 
 + **Required**. [object HTMLDivElement]
 
 + > You can find example at [**Install**](https://minivaline.js.org/docs/en/#/Install)
-  >
 
 ### **pathname** `String`
 
@@ -38,32 +35,33 @@
 
 + > You can find example at [**Install**](https://minivaline.js.org/docs/en/#/Install)
   >
+  > Note that sometimes quotation marks are not needed as a variable.[detail](https://github.com/MiniValine/MiniValine/issues/250)
 
 
 
 ## Base Options
 
-| Option          | type           | Default         | description                                                  | minivaline version<br />front-end | Waline   version<br />[back-end](https://www.npmjs.com/package/@waline/vercel) |
-| --------------- | -------------- | --------------- | ------------------------------------------------------------ | --------------------------------- | ------------------------------------------------------------ |
-| **appId**       | `String`       | `null`          | **Leancloud back-end Required**.<br />Your App ID, detail from [Advance](https://minivaline.js.org/docs/en/#/Options?id=get-app-idapp-key) | `1.x~latest`                      | :x:                                                          |
-| **appKey**      | `String`       | null            | **Leancloud back-end Required**.<br /><br />Your App Key,detail from [Advance](https://minivaline.js.org/docs/en/#/Options?id=get-app-idapp-key) | `1.x~latest`                      | :x:                                                          |
-| **mode**        | `String`       | `DesertsP`      | The details are Under the table                              | `2.x~latest`                      | `0.8.6~latest`                                               |
-| **placeholder** | `String`       | `null`          | Input Placeholder                                            | `1.x~latest`                      | `0.8.6~latest`                                               |
-| **math**        | `Boolean`      | `true`          | The details are Under the table                              | `1.x~latest`                      | `0.8.6~latest`                                               |
-| **md**          | `Boolean`      | `true`          | Support Markdown.                                            | `1.x~latest`                      | :x:                                                          |
-| **dark**        | `Boolean`      | `false`         | [Dark model.](https://minivaline.js.org/docs/en/#/Options?id=how-to-add-dark-mode) | `3.x~latest`                      | `0.8.6~latest`                                               |
-| **lang**        | `String`       | Under the table | The details are Under the table                              | `1.x~latest`                      | `0.8.6~latest`                                               |
-| **emoticonUrl** | `String Array` | Under the table | The details are Under the table                              | `1.x~latest`                      | `0.8.6~latest`                                               |
-| **NoRecordIP**  | `Boolean`      | `false`         | Do not record commenter IP.                                  | `1.x~latest`                      | :x:                                                          |
-| **maxNest**     | `Number`       | `6`             | Sub-comment maximum nesting depth.                           | `1.x~latest`                      | `0.8.6~latest`                                               |
-| **pageSize**    | `Number`       | `6`             | Pagination size.                                             | `1.x~latest`                      | `0.8.6~latest`                                               |
-| **visitor**     | `Boolean`      | `true`          | Only **article reading access statistics**and <br />**whole site access statistics** are provided. | `2.x~latest`                      | `0.8.6~latest`                                               |
-| **serverURLs**  | `String`       | Under the table | The details are Under the table                              | `1.x~latest`                      | `0.8.6~latest`                                               |
-| **barrager**    | `Number`       | `true`          | The details are Under the table                              | `3.x~latest`                      | `0.8.6~latest`                                               |
-| **role**        | `String`       | `admin`         | The details are Under the table                              | `3.x~latest`                      | :x:                                                          |
-| **closeCSS**    | `Boolean`      | `false`         | Turn off loading CSS.                                        | `4.x~latest`                      | `0.8.6~latest`                                               |
-| **enableQQ**    | `Boolean`      | `false`         | **Deleted**  The details are Under the table                 | `2.x~3.x`                         | :x:                                                          |
-| **backend**     | `String`       | `lc`            | The details are Under the table                              | `5.x~latest`                      | `0.8.6~latest`                                               |
+| Option          | type           | Default                         | description                                                  | minivaline version<br />front-end | Waline   version<br />[back-end](https://www.npmjs.com/package/@waline/vercel) |
+| --------------- | -------------- | ------------------------------- | ------------------------------------------------------------ | --------------------------------- | ------------------------------------------------------------ |
+| **appId**       | `String`       | `null`                          | **Leancloud back-end Required**.<br />Your App ID, detail from [Advance](https://minivaline.js.org/docs/en/#/Options?id=get-app-idapp-key) | `1.x~latest`                      | :x:                                                          |
+| **appKey**      | `String`       | null                            | **Leancloud back-end Required**.<br /><br />Your App Key,detail from [Advance](https://minivaline.js.org/docs/en/#/Options?id=get-app-idapp-key) | `1.x~latest`                      | :x:                                                          |
+| **mode**        | `String`       | `DesertsP`                      | choose Style mode, The details are Under the table           | `2.x~latest`                      | `0.8.6~latest`                                               |
+| **placeholder** | `String`       | `null`                          | Input Placeholder                                            | `1.x~latest`                      | `0.8.6~latest`                                               |
+| **math**        | `Boolean`      | `true`                          | Support MathJax, details below.                              | `1.x~latest`                      | `0.8.6~latest`                                               |
+| **md**          | `Boolean`      | `true`                          | Support Markdown.                                            | `1.x~latest`                      | :x:                                                          |
+| **dark**        | `Boolean`      | `false`                         | [Dark model.](https://minivaline.js.org/docs/en/#/Options?id=how-to-add-dark-mode) | `3.x~latest`                      | `0.8.6~latest`                                               |
+| **lang**        | `String`       | navigator userLanguage          | support i18n,details below.                                  | `1.x~latest`                      | `0.8.6~latest`                                               |
+| **emoticonUrl** | `String Array` | built-in emoticon               | yourself emoticonUrl, details below.                         | `1.x~latest`                      | `0.8.6~latest`                                               |
+| **NoRecordIP**  | `Boolean`      | `false`                         | Do not record commenter IP.                                  | `1.x~latest`                      | :x:                                                          |
+| **maxNest**     | `Number`       | `6`                             | Sub-comment maximum nesting depth.                           | `1.x~latest`                      | `0.8.6~latest`                                               |
+| **pageSize**    | `Number`       | `6`                             | Pagination size.                                             | `1.x~latest`                      | `0.8.6~latest`                                               |
+| **visitor**     | `Boolean`      | `true`                          | Only **article reading access statistics**and <br />**whole site access statistics** are provided. | `2.x~latest`                      | `0.8.6~latest`                                               |
+| **serverURLs**  | `String`       | Leancloud International Edition | choose backend URL, details below.                           | `1.x~latest`                      | `0.8.6~latest`                                               |
+| **barrager**    | `Number`       | `true`                          | Load or close Comment, details below.                        | `3.x~latest`                      | `0.8.6~latest`                                               |
+| **role**        | `String`       | `admin`                         | administrator role, details below.                           | `3.x~latest`                      | :x:                                                          |
+| **closeCSS**    | `Boolean`      | `false`                         | Turn off loading CSS.                                        | `4.x~latest`                      | `0.8.6~latest`                                               |
+| **enableQQ**    | `Boolean`      | `false`                         | **Deleted**  The details are Under the table                 | `2.x~3.x`                         | :x:                                                          |
+| **backend**     | `String`       | `lc`                            | If not leancloud need choose backend , details below.        | `5.x~latest`                      | `0.8.6~latest`                                               |
 
 
 
@@ -136,9 +134,25 @@
 
 + Default: `http[s]://[tab/us].avoscloud.com`
   
-+ >  This configuration is suitable for domestic custom domain name users, the overseas version will be automatically detected (no need to fill in manually).
++ Options：
   
-+ [Try to use cloudflare workers edge computing to improve the security](https://minivaline.js.org/docs/en/#/FAQ?id=how-to-improve-the-security-of-minivaline)
+  + default
+    
+    + > The overseas version will be automatically detected (**no need** to fill in manually).
+    
+  + Your URL (domestic custom domain name users)
+  
+    + >  This configuration is suitable for domestic custom domain name users.
+  
+  + Cloudflare Middleware
+  
+    + [Try to use cloudflare workers edge computing to improve the security](https://minivaline.js.org/docs/en/#/FAQ?id=how-to-improve-the-security-of-minivaline)
+  
+  + Your back-end url
+  
+    + [how-to-add-backend](https://minivaline.js.org/docs/en/#/Options?id=how-to-add-backend-)
+  
+      + > Now only support waline.
 
 ### **barrager** `Number`
 

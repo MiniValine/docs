@@ -38,32 +38,33 @@
 
 + > 即 文章路径 ，可以在 [**Install**](https://minivaline.js.org/docs/cn/#/Install) 找到例子
   >
+  > 注意如果开发一个主题或插件，有些场景不用加引号，因为本身是变量，加了引号变成常字符串了。[detail](https://github.com/MiniValine/MiniValine/issues/250)
 
 
 
 ## Base Options
 
-| Option          | type           | Default          | description                                                  | Minivaline<br />前端版本 | Waline    <br />后端版本 |
-| --------------- | -------------- | ---------------- | ------------------------------------------------------------ | ------------------------ | ------------------------ |
-| **appId**       | `String`       | `null`           | 注意**leancloud后端**这个**必须要有的**，你的 App ID 详见 [Advance](https://minivaline.js.org/docs/cn/#/Options?id=get-app-idapp-key) | `1.x~latest`             | :x:                      |
-| **appKey**      | `String`       | `null`           | 注意**leancloud后端**这个**必须要有的**，你的 App Key,详见 [Advance](https://minivaline.js.org/docs/cn/#/Options?id=get-app-idapp-key) | `1.x~latest`             | :x:                      |
-| **mode**        | `String`       | `DesertsP`       | 详见表格底下备注                                             | `2.x~latest`             | `0.8.6~latest`           |
-| **placeholder** | `String`       | `null`           | 输入框占位符                                                 | `1.x~latest`             | `0.8.6~latest`           |
-| **math**        | `Boolean`      | `true`           | 详见表格底下备注                                             | `1.x~latest`             | `0.8.6~latest`           |
-| **md**          | `Boolean`      | `true`           | 内置markdown                                                 | `1.x~latest`             | :x:                      |
-| **dark**        | `Boolean`      | `false`          | 黑暗模式                                                     | `3.x~latest`             | `0.8.6~latest`           |
-| **lang**        | `String`       | 详见表格底下备注 | 详见表格底下备注                                             | `1.x~latest`             | `0.8.6~latest`           |
-| **emoticonUrl** | `String Array` | 详见表格底下备注 | 详见表格底下备注                                             | `1.x~latest`             | `0.8.6~latest`           |
-| **NoRecordIP**  | `Boolean`      | `false`          | 不记录评论者IP                                               | `1.x~latest`             | :x:                      |
-| **maxNest**     | `Number`       | `6`              | 评论引用最大深度                                             | `1.x~latest`             | `0.8.6~latest`           |
-| **pageSize**    | `Number`       | `6`              | Pagination size.                                             | `1.x~latest`             | `0.8.6~latest`           |
-| **visitor**     | `Boolean`      | `true`           | Only `article reading access statistics`and `whole site access statistics` are provided. | `2.x~latest`             | `0.8.6~latest`           |
-| **serverURLs**  | `String`       | 详见表格底下备注 | 详见表格底下备注                                             | `1.x~latest`             | `0.8.6~latest`           |
-| **barrager**    | `Number`       | `1`              | 详见表格底下备注                                             | `3.x~latest`             | `0.8.6~latest`           |
-| **role**        | `String`       | `admin`          | 详见表格底下备注                                             | `3.x~latest`             | :x:                      |
-| **closeCSS**    | `Boolean`      | `false`          | 关闭加载动画                                                 | `4.x~latest`             | `0.8.6~latest`           |
-| **enableQQ**    | `Boolean`      | `false`          | **Deleted**  详见表格底下备注,和faq                          | `2.x~3.x`                | :x:                      |
-| **backend**     | `String`       | `lc`             | 详见表格底下备注                                             | `5.x~latest`             | `0.8.6~latest`           |
+| Option          | type           | Default         | description                                                  | Minivaline<br />前端版本 | Waline    <br />后端版本 |
+| --------------- | -------------- | --------------- | ------------------------------------------------------------ | ------------------------ | ------------------------ |
+| **appId**       | `String`       | `null`          | 注意**leancloud后端**这个**必须要有的**，你的 App ID 详见 [Advance](https://minivaline.js.org/docs/cn/#/Options?id=get-app-idapp-key) | `1.x~latest`             | :x:                      |
+| **appKey**      | `String`       | `null`          | 注意**leancloud后端**这个**必须要有的**，你的 App Key,详见 [Advance](https://minivaline.js.org/docs/cn/#/Options?id=get-app-idapp-key) | `1.x~latest`             | :x:                      |
+| **mode**        | `String`       | `DesertsP`      | 样式模式                                                     | `2.x~latest`             | `0.8.6~latest`           |
+| **placeholder** | `String`       | `null`          | 输入框占位符                                                 | `1.x~latest`             | `0.8.6~latest`           |
+| **math**        | `Boolean`      | `true`          | 支持数学公式                                                 | `1.x~latest`             | `0.8.6~latest`           |
+| **md**          | `Boolean`      | `true`          | 内置markdown                                                 | `1.x~latest`             | :x:                      |
+| **dark**        | `Boolean`      | `false`         | 黑暗模式                                                     | `3.x~latest`             | `0.8.6~latest`           |
+| **lang**        | `String`       | 用户目前语言    | 语言                                                         | `1.x~latest`             | `0.8.6~latest`           |
+| **emoticonUrl** | `String Array` | 内置表情        | 自定义表情链接                                               | `1.x~latest`             | `0.8.6~latest`           |
+| **NoRecordIP**  | `Boolean`      | `false`         | 不记录评论者IP                                               | `1.x~latest`             | :x:                      |
+| **maxNest**     | `Number`       | `6`             | 评论引用最大深度                                             | `1.x~latest`             | `0.8.6~latest`           |
+| **pageSize**    | `Number`       | `6`             | Pagination size.                                             | `1.x~latest`             | `0.8.6~latest`           |
+| **visitor**     | `Boolean`      | `true`          | 仅提供“文章阅读访问统计”和“整个站点访问统计”。               | `2.x~latest`             | `0.8.6~latest`           |
+| **serverURLs**  | `String`       | leancloud国际版 | 后端具体地址                                                 | `1.x~latest`             | `0.8.6~latest`           |
+| **barrager**    | `Number`       | `1`             | 弹幕                                                         | `3.x~latest`             | `0.8.6~latest`           |
+| **role**        | `String`       | `admin`         | 角色                                                         | `3.x~latest`             | :x:                      |
+| **closeCSS**    | `Boolean`      | `false`         | 关闭加载动画                                                 | `4.x~latest`             | `0.8.6~latest`           |
+| **enableQQ**    | `Boolean`      | `false`         | **Deleted**  详见表格底下备注,和faq                          | `2.x~3.x`                | :x:                      |
+| **backend**     | `String`       | `lc`            | 后端类型                                                     | `5.x~latest`             | `0.8.6~latest`           |
 
 
 
@@ -72,8 +73,8 @@
 - Default: `DesertsP`
 - Options: 
 
-  - `DesertsP` DesertsP 样式.
-  - `xCss`  xCss 样式.
+  - `DesertsP` DesertsP 样式. [demo](https://minivaline.js.org/DesertsP.html)
+  - `xCss`  xCss 样式. [demo](https://minivaline.js.org/xCss.html)
 
 ### **Math** `Boolean`: 
 
@@ -134,11 +135,27 @@
 
 ### **serverURLs** `String`
 
-+ Default: `http[s]://[tab/us].avoscloud.com`
++ Default: `http[s]://[tab/us].avoscloud.com` 即
+
++ Option
   
-+ >  This configuration is suitable for domestic custom domain name users, the overseas version will be automatically detected (no need to fill in manually).
+  + 默认
+    
+    + 国际版Leancloud服务地址，将自动检测海外版本（使用国际版**无需**手动填写）。
+    
+  + 国内版自己绑定域名地址
   
-+ [Try to use cloudflare workers edge computing to improve the security](https://minivaline.js.org/docs/en/#/FAQ?id=how-to-improve-the-security-of-minivaline)
+    + 此配置适用于国内自定义域名用户
+  
+  + cloudflare中间安全处理地址
+  
+    + [Try to use cloudflare workers edge computing to improve the security](https://minivaline.js.org/docs/en/#/FAQ?id=how-to-improve-the-security-of-minivaline)
+  
+  + 使用自定义后端的后端地址
+  
+    + [how-to-add-backend](https://minivaline.js.org/docs/en/#/Options?id=how-to-add-backend-)
+  
+    + > 目前只支持waline，你可以加入我们一起开发更多类型～
 
 ### **barrager** `Number`
 
@@ -198,17 +215,17 @@
 
 | Option        | type           | Default | description                                                  | Minivaline<br />前端版本 | Waline    <br />后端版本 |
 | ------------- | -------------- | ------- | ------------------------------------------------------------ | ------------------------ | ------------------------ |
-|               |                |         | visitor flag bellow                                          |                          |                          |
-| **closeFlag** | `Boolean`      | `false` | Turn off visitor flag.                                       | `3.x~latest`             | `0.8.6~latest`           |
-|               |                |         | Visitor Flag **Local** Options bellow                        |                          |                          |
-| **master**    | `String Array` | `[]`    | The MD5 String Array of master Email to show master Flag.    | `2.x~latest`             | `0.8.6~latest`           |
-| **friends**   | `String Array` | `[]`    | The MD5 String Array of friends Email to show friends Flag.  | `2.x~latest`             | `0.8.6~latest`           |
-| **tagMeta**   | `String Array` | `[]`    | The String Array of Words to show Flag (only three).For Example: `tagMeta: ["Master", "Friend", "Visitor"]` | `2.x~latest`             | `0.8.6~latest`           |
-|               |                |         | Visitor Flag **Cloud** Option bellow                         |                          |                          |
-| **cloudflag** | `Boolean`      | `false` | 详见表格底下备注                                             | `3.x~latest`             | :x:                      |
-|               |                |         | xCss Style mode **Others Options** bellow                    |                          |                          |
-| **region**    | `Boolean`      | `false` | 详见表格底下备注                                             | `3.x~latest`             | :x:                      |
-| **closeUA**   | `Boolean`      | `false` | Turn off UA detection.                                       | `3.x~latest`             | `0.8.6~latest`           |
+|               |                |         | 下面是访客标识配置                                           |                          |                          |
+| **closeFlag** | `Boolean`      | `false` | 关闭访客标识                                                 | `3.x~latest`             | `0.8.6~latest`           |
+|               |                |         | 下面是本地访客标识配置(写在配置里的那种)                     |                          |                          |
+| **master**    | `String Array` | `[]`    | 管理员邮箱md5将显示管理员标识                                | `2.x~latest`             | `0.8.6~latest`           |
+| **friends**   | `String Array` | `[]`    | 管朋友邮箱md5将显示朋友标识                                  | `2.x~latest`             | `0.8.6~latest`           |
+| **tagMeta**   | `String Array` | `[]`    | 朋友标识类型（仅支持三项）例如: `tagMeta: ["Master", "Friend", "Visitor"]` | `2.x~latest`             | `0.8.6~latest`           |
+|               |                |         | 下面是云端访客标识配置(写在leancloud配置里的那种)            |                          |                          |
+| **cloudflag** | `Boolean`      | `false` | 云标识，具体看表后和FAQ                                      | `3.x~latest`             | :x:                      |
+|               |                |         | xCss 样式的其他选项                                          |                          |                          |
+| **region**    | `Boolean`      | `false` | 现实地区                                                     | `3.x~latest`             | :x:                      |
+| **closeUA**   | `Boolean`      | `false` | 关闭UA                                                       | `3.x~latest`             | `0.8.6~latest`           |
 
 
 
