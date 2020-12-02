@@ -8,6 +8,7 @@
 
 <iframe src="./assets/mode.cn.html" width="200" height="600"></iframe>
 
+!> minivaline前端直接连接leancloud组合存在高危安全漏洞，该组合仅为开发者用作测试桩程序，不推荐用于线上部署。推荐使用具有服务端中间层的组合。
 
 
 ## Mount Options

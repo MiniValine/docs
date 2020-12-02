@@ -74,6 +74,13 @@ There are no immediate plans to accept donations,maybe.
 
 **[WHY](https://github.com/lizheming/waline/blob/master/docs/why.md)**
 
+!> Note that the following are optional mode combinations. By default, both the minivaline and leancloud combinations are supported. The minivaline front-end and waline back-end must both support options to work. If one is not supported, an unknown error may occur.
+
+<iframe src="./assets/mode.en.html" width="200" height="600"></iframe>
+
+!> The minivaline front-end is directly connected to the leancloud combination, which has high-risk security vulnerabilities. This combination is only used as a test post for developers, and is not recommended for online deployment. It is recommended to use the combination with server-side middle layer.
+
+
 ### Version 4.x
 
 MiniValine version 4.x makes incompatible modification on the basis of MiniValine version 3.x to improve the security of MiniValine.

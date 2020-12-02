@@ -18,7 +18,7 @@
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/9c203d6a0703457081c8d563a0b3b810)](https://www.codacy.com/gh/MiniValine/MiniValine?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=MiniValine/MiniValine&amp;utm_campaign=Badge_Grade)
 [![DeepScan grade](https://deepscan.io/api/teams/11674/projects/14601/branches/275411/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=11674&pid=14601&bid=275411)
 
-> MiniValine is a simple and minimalist comment system based on Leancloud
+> MiniValine is a simple and minimalist comment system
 ------------------------------
 
 **[Demo](https://minivaline.github.io)** | **[Docs](https://minivaline.js.org/docs/)** | **[FAQs](https://minivaline.js.org/docs/en/#/FAQ)** | **[Awesome](https://github.com/MiniValine/AWESOME-MiniValine)**
@@ -39,7 +39,7 @@
 
 本项目将原始 `LICENCE` 由 `GPL v2 or later` 升级为 `GPL V3 or later` 重新分发.
 
-### 原始 `LICENCE`
+### 原始 Copyright Notice
 
 https://github.com/xCss/Valine/blob/3fbddbf71dff61d35ccdfb18f39cbf4ac679330c/LICENSE#L293-L309
 
@@ -63,7 +63,7 @@ https://github.com/xCss/Valine/blob/3fbddbf71dff61d35ccdfb18f39cbf4ac679330c/LIC
 
 ```
 
-### MiniValine's `LICENCE`
+### MiniValine's Copyright Notice
 
 ```
     MiniValine

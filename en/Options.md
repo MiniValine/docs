@@ -10,6 +10,7 @@
 
 <iframe src="./assets/mode.en.html" width="200" height="600"></iframe>
 
+!> The minivaline front-end is directly connected to the leancloud combination, which has high-risk security vulnerabilities. This combination is only used as a test post for developers, and is not recommended for online deployment. It is recommended to use the combination with server-side middle layer.
 
 
 ## Mount Options
