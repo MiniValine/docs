@@ -160,7 +160,7 @@
 
 ### **barrager** `Number`
 
-+ Default: `1`
++ Default: `0`
 + Options: 
   + `0`  Close Comment barrage.
   + `1`  Load a round of Comment barrager.

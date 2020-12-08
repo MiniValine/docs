@@ -58,7 +58,7 @@
 | **pageSize**    | `Number`       | `6`                             | Pagination size.                                             | `1.x~latest`                      | `0.8.6~latest`                                               |
 | **visitor**     | `Boolean`      | `true`                          | Only **article reading access statistics**and <br />**whole site access statistics** are provided. | `2.x~latest`                      | `0.8.6~latest`                                               |
 | **serverURLs**  | `String`       | Leancloud International Edition | choose backend URL, details below.                           | `1.x~latest`                      | `0.8.6~latest`                                               |
-| **barrager**    | `Number`       | `true`                          | Load or close Comment, details below.                        | `3.x~latest`                      | `0.8.6~latest`                                               |
+| **barrager**    | `Number`       | `0`                             | Load or close Comment, details below.                        | `3.x~latest`                      | `0.8.6~latest`                                               |
 | **role**        | `String`       | `admin`                         | administrator role, details below.                           | `3.x~latest`                      | :x:                                                          |
 | **closeCSS**    | `Boolean`      | `false`                         | Turn off loading CSS.                                        | `4.x~latest`                      | `0.8.6~latest`                                               |
 | **enableQQ**    | `Boolean`      | `false`                         | **Deleted**  The details are Under the table                 | `2.x~3.x`                         | :x:                                                          |
@@ -157,7 +157,7 @@
 
 ### **barrager** `Number`
 
-+ Default: `1`
++ Default: `0`
 
 + Options: 
   + `0`  Close Comment barrager.
