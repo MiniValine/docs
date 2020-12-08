@@ -51,7 +51,7 @@
 | **appKey**      | `String`       | `null`          | 注意**leancloud后端**这个**必须要有的**，你的 App Key,详见 [Advance](https://minivaline.js.org/docs/cn/#/Options?id=get-app-idapp-key) | `1.x~latest`             | :x:                      |
 | **mode**        | `String`       | `DesertsP`      | 样式模式                                                     | `2.x~latest`             | `0.8.6~latest`           |
 | **placeholder** | `String`       | `null`          | 输入框占位符                                                 | `1.x~latest`             | `0.8.6~latest`           |
-| **math**        | `Boolean`      | `true`          | 支持数学公式                                                 | `1.x~latest`             | `0.8.6~latest`           |
+| **math**        | `Boolean`      | `true`          | 支持数学公式                                                 | `1.x~latest`             | :x:                      |
 | **md**          | `Boolean`      | `true`          | 内置markdown                                                 | `1.x~latest`             | :x:                      |
 | **dark**        | `Boolean`      | `false`         | 黑暗模式                                                     | `3.x~latest`             | `0.8.6~latest`           |
 | **lang**        | `String`       | 用户目前语言    | 语言                                                         | `1.x~latest`             | `0.8.6~latest`           |
