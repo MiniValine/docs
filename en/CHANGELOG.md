@@ -11,7 +11,7 @@
 ## 5.x （Latest）
 
 - Adaptive pairing [waline](https://github.com/lizheming/waline) Back end data interaction
-- All advanced rendering functions are turned off by default, that is, only the basic comment function is disabled by default
+- All advanced rendering functions are turned off by default, that is, only the basic comment function is enabled by default
 
 ### Add
 
