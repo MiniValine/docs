@@ -10,11 +10,24 @@
 
 ## 5.x （Latest）
 
+- 适配对[walinel](https://github.com/lizheming/waline)后端数据交互
+- 默认关闭所有高级渲染功能,即默认只有基础评论功能
+
 ### Add
 
-- 适配对[walinel](https://github.com/lizheming/waline)后端数据交互
+- option.backend
 
-+ option.backend
++ option.enableFlag
++ option.enableUA
++ option.RecordIP
+
+### Change
+
+- option.barrager 默认值由`1`改为`0`
+- option.md 默认值由`true`改为`false`
+- option.math 默认值由`true`改为`false`
+- option.visitor 默认值由`true`改为`false`
+- option.mode 默认值由`DesertsP`改为`xCss`
 
 ### Fix
 
@@ -22,7 +35,9 @@
 
 ### Del
 
-+ Null
++ option.closeFlag
++ option.closeUA
++ option.NoRecordIP
 
 
 

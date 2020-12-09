@@ -49,29 +49,30 @@
 | --------------- | -------------- | --------------- | ------------------------------------------------------------ | ------------------------ | ------------------------ |
 | **appId**       | `String`       | `null`          | 注意**leancloud后端**这个**必须要有的**，你的 App ID 详见 [Advance](https://minivaline.js.org/docs/cn/#/Options?id=get-app-idapp-key) | `1.x~latest`             | :x:                      |
 | **appKey**      | `String`       | `null`          | 注意**leancloud后端**这个**必须要有的**，你的 App Key,详见 [Advance](https://minivaline.js.org/docs/cn/#/Options?id=get-app-idapp-key) | `1.x~latest`             | :x:                      |
-| **mode**        | `String`       | `DesertsP`      | 样式模式                                                     | `2.x~latest`             | `0.8.6~latest`           |
+| **mode**        | `String`       | `xCss`          | 样式模式                                                     | `2.x~latest`             | `0.8.6~latest`           |
 | **placeholder** | `String`       | `null`          | 输入框占位符                                                 | `1.x~latest`             | `0.8.6~latest`           |
-| **math**        | `Boolean`      | `true`          | 支持数学公式                                                 | `1.x~latest`             | :x:                      |
-| **md**          | `Boolean`      | `true`          | 内置markdown                                                 | `1.x~latest`             | :x:                      |
+| **math**        | `Boolean`      | `false`         | 支持数学公式                                                 | `1.x~latest`             | :x:                      |
+| **md**          | `Boolean`      | `false`         | 内置markdown                                                 | `1.x~latest`             | :x:                      |
 | **dark**        | `Boolean`      | `false`         | 黑暗模式                                                     | `3.x~latest`             | `0.8.6~latest`           |
 | **lang**        | `String`       | 用户目前语言    | 语言                                                         | `1.x~latest`             | `0.8.6~latest`           |
 | **emoticonUrl** | `String Array` | 内置表情        | 自定义表情链接                                               | `1.x~latest`             | `0.8.6~latest`           |
-| **NoRecordIP**  | `Boolean`      | `false`         | 不记录评论者IP                                               | `1.x~latest`             | :x:                      |
+| **NoRecordIP**  | `Boolean`      | `false`         | 不记录评论者IP                                               | `1.x~4.x`                | :x:                      |
+| **RecordIP**    | `Boolean`      | `false`         | 记录评论者IP                                                 | `5.x~latest`             | :x:                      |
 | **maxNest**     | `Number`       | `6`             | 评论引用最大深度                                             | `1.x~latest`             | `0.8.6~latest`           |
 | **pageSize**    | `Number`       | `6`             | Pagination size.                                             | `1.x~latest`             | `0.8.6~latest`           |
 | **visitor**     | `Boolean`      | `true`          | 仅提供“文章阅读访问统计”和“整个站点访问统计”。               | `2.x~latest`             | `0.8.6~latest`           |
 | **serverURLs**  | `String`       | leancloud国际版 | 后端具体地址                                                 | `1.x~latest`             | `0.8.6~latest`           |
-| **barrager**    | `Number`       | `1`             | 弹幕                                                         | `3.x~latest`             | `0.8.6~latest`           |
+| **barrager**    | `Number`       | `0`             | 弹幕                                                         | `3.x~latest`             | `0.8.6~latest`           |
 | **role**        | `String`       | `admin`         | 角色                                                         | `3.x~latest`             | :x:                      |
-| **closeCSS**    | `Boolean`      | `false`         | 关闭加载动画                                                 | `4.x~latest`             | `0.8.6~latest`           |
-| **enableQQ**    | `Boolean`      | `false`         | **Deleted**  详见表格底下备注,和faq                          | `2.x~3.x`                | :x:                      |
+| **closeCSS**    | `Boolean`      | `false`         | 关闭CSS样式                                                  | `4.x~latest`             | `0.8.6~latest`           |
 | **backend**     | `String`       | `lc`            | 后端类型                                                     | `5.x~latest`             | `0.8.6~latest`           |
+| **enableQQ**    | `Boolean`      | `false`         | **Deleted**  详见表格底下备注,和faq                          | `2.x~3.x`                | :x:                      |
 
 
 
 ### **mode** `String`
 
-- Default: `DesertsP`
+- Default: `xCss`
 - Options: 
 
   - `DesertsP` DesertsP 样式. [demo](https://minivaline.js.org/DesertsP.html)
@@ -214,19 +215,21 @@
 
 
 
-| Option        | type           | Default | description                                                  | Minivaline<br />前端版本 | Waline    <br />后端版本 |
-| ------------- | -------------- | ------- | ------------------------------------------------------------ | ------------------------ | ------------------------ |
-|               |                |         | 下面是访客标识配置                                           |                          |                          |
-| **closeFlag** | `Boolean`      | `false` | 关闭访客标识                                                 | `3.x~latest`             | `0.8.6~latest`           |
-|               |                |         | 下面是本地访客标识配置(写在配置里的那种)                     |                          |                          |
-| **master**    | `String Array` | `[]`    | 管理员邮箱md5将显示管理员标识                                | `2.x~latest`             | `0.8.6~latest`           |
-| **friends**   | `String Array` | `[]`    | 管朋友邮箱md5将显示朋友标识                                  | `2.x~latest`             | `0.8.6~latest`           |
-| **tagMeta**   | `String Array` | `[]`    | 朋友标识类型（仅支持三项）例如: `tagMeta: ["Master", "Friend", "Visitor"]` | `2.x~latest`             | `0.8.6~latest`           |
-|               |                |         | 下面是云端访客标识配置(写在leancloud配置里的那种)            |                          |                          |
-| **cloudflag** | `Boolean`      | `false` | 云标识，具体看表后和FAQ                                      | `3.x~latest`             | :x:                      |
-|               |                |         | xCss 样式的其他选项                                          |                          |                          |
-| **region**    | `Boolean`      | `false` | 现实地区                                                     | `3.x~latest`             | :x:                      |
-| **closeUA**   | `Boolean`      | `false` | 关闭UA                                                       | `3.x~latest`             | `0.8.6~latest`           |
+| Option         | type           | Default | description                                                  | Minivaline<br />前端版本 | Waline    <br />后端版本 |
+| -------------- | -------------- | ------- | ------------------------------------------------------------ | ------------------------ | ------------------------ |
+|                |                |         | 下面是访客标识配置                                           |                          |                          |
+| **closeFlag**  | `Boolean`      | `false` | 关闭访客标识                                                 | `3.x~4.x`                | :x:                      |
+| **enableFlag** | `Boolean`      | `false` | 开启访客标识                                                 | 5.x~latest`              | `0.8.6~latest`           |
+|                |                |         | 下面是本地访客标识配置(写在配置里的那种)                     |                          |                          |
+| **master**     | `String Array` | `[]`    | 管理员邮箱md5将显示管理员标识                                | `2.x~latest`             | `0.8.6~latest`           |
+| **friends**    | `String Array` | `[]`    | 管朋友邮箱md5将显示朋友标识                                  | `2.x~latest`             | `0.8.6~latest`           |
+| **tagMeta**    | `String Array` | `[]`    | 朋友标识类型（仅支持三项）例如: `tagMeta: ["Master", "Friend", "Visitor"]` | `2.x~latest`             | `0.8.6~latest`           |
+|                |                |         | 下面是云端访客标识配置(写在leancloud配置里的那种)            |                          |                          |
+| **cloudflag**  | `Boolean`      | `false` | 云标识，具体看表后和FAQ                                      | `3.x~latest`             | :x:                      |
+|                |                |         | xCss 样式的其他选项                                          |                          |                          |
+| **region**     | `Boolean`      | `false` | 现实地区                                                     | `3.x~latest`             | :x:                      |
+| **closeUA**    | `Boolean`      | `false` | 关闭UA                                                       | `3.x~4.x`                | :x:                      |
+| **enableUA**   | `Boolean`      | `false` | 开启UA                                                       | `5.x~latest`             | `0.8.6~latest`           |
 
 
 
