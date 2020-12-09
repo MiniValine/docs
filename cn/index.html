@@ -36,11 +36,14 @@
                 placeholder: '评论一下吧~',
                 mode: 'xCss',
                 lang: 'zh-CN',
-                visitor: true,
-                region: true,
-                closeFlag: true,
                 //更多选项 https://minivaline.js.org/docs/en/#/Options   除了 [el] 选项，这个已经在插件里体现了
-            },
+                visitor: true,
+                RecordIP: true,
+                region: true,
+                md: true,
+                math: true,
+                enableUA: true,
+			},
             //docsify-minivaline 示例
             plugins: [
                 function (hook, vm) {

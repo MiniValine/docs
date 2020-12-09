@@ -60,7 +60,7 @@
 | **RecordIP**    | `Boolean`      | `false`         | 记录评论者IP                                                 | `5.x~latest`             | :x:                      |
 | **maxNest**     | `Number`       | `6`             | 评论引用最大深度                                             | `1.x~latest`             | `0.8.6~latest`           |
 | **pageSize**    | `Number`       | `6`             | Pagination size.                                             | `1.x~latest`             | `0.8.6~latest`           |
-| **visitor**     | `Boolean`      | `true`          | 仅提供“文章阅读访问统计”和“整个站点访问统计”。               | `2.x~latest`             | `0.8.6~latest`           |
+| **visitor**     | `Boolean`      | `false`         | 仅提供“文章阅读访问统计”和“整个站点访问统计”。               | `2.x~latest`             | `0.8.6~latest`           |
 | **serverURLs**  | `String`       | leancloud国际版 | 后端具体地址                                                 | `1.x~latest`             | `0.8.6~latest`           |
 | **barrager**    | `Number`       | `0`             | 弹幕                                                         | `3.x~latest`             | `0.8.6~latest`           |
 | **role**        | `String`       | `admin`         | 角色                                                         | `3.x~latest`             | :x:                      |

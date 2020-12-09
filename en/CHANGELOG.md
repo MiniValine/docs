@@ -10,11 +10,23 @@
 
 ## 5.x （Latest）
 
+- Adaptive pairing [waline](https://github.com/lizheming/waline) Back end data interaction
+- All advanced rendering functions are turned off by default, that is, only the basic comment function is disabled by default
+
 ### Add
 
-- Adaptive pairing [waline](https://github.com/lizheming/waline) Back end data interaction
+- option.backend
+- option.enableFlag
+- option.enableUA
+- option.RecordIP
 
-+ option.backend
+### Change
+
+- option.barrager The default value is changed from`1`to`0`
+- option.md The default value is changed from`true`to`false`
+- option.math The default value is changed from`true`to`false`
+- option.visitor The default value is changed from`true`to`false`
+- option.mode The default value is changed from`DesertsP`to`xCss`
 
 ### Fix
 
@@ -22,7 +34,9 @@
 
 ### Del
 
-+ Null
++ option.closeFlag
++ option.closeUA
++ option.NoRecordIP
 
 
 
