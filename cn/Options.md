@@ -47,6 +47,7 @@
 
 | Option          | type           | Default         | description                                                  | Minivaline<br />前端版本 | Waline    <br />后端版本 |
 | --------------- | -------------- | --------------- | ------------------------------------------------------------ | ------------------------ | ------------------------ |
+| **backend**     | `String`       | `lc`            | 后端类型                                                     | `5.x~latest`             | `0.8.6~latest`           |
 | **appId**       | `String`       | `null`          | 注意**leancloud后端**这个**必须要有的**，你的 App ID 详见 [Advance](https://minivaline.js.org/docs/cn/#/Options?id=get-app-idapp-key) | `1.x~latest`             | :x:                      |
 | **appKey**      | `String`       | `null`          | 注意**leancloud后端**这个**必须要有的**，你的 App Key,详见 [Advance](https://minivaline.js.org/docs/cn/#/Options?id=get-app-idapp-key) | `1.x~latest`             | :x:                      |
 | **mode**        | `String`       | `xCss`          | 样式模式                                                     | `5.x~latest`             | `0.8.6~latest`           |
@@ -64,7 +65,8 @@
 | **barrager**    | `Number`       | `0`             | 弹幕                                                         | `5.x~latest`             | `0.8.6~latest`           |
 | **role**        | `String`       | `admin`         | 角色                                                         | `3.x~latest`             | :x:                      |
 | **closeCSS**    | `Boolean`      | `false`         | 关闭CSS样式                                                  | `4.x~latest`             | `0.8.6~latest`           |
-| **backend**     | `String`       | `lc`            | 后端类型                                                     | `5.x~latest`             | `0.8.6~latest`           |
+|                 |                |                 |                                                              |                          |                          |
+|                 |                |                 |                                                              |                          |                          |
 |                 |                |                 |                                                              |                          |                          |
 |                 |                |                 | 下面是已经过时的配置,通常是已经更改或删除                    |                          |                          |
 | **math**        | `Boolean`      | `true`          | **Changed** 支持数学公式                                     | `1.x~4.x`                | :x:                      |
@@ -166,6 +168,20 @@
   
     + > 目前只支持waline，你可以加入我们一起开发更多类型～
 
+### **backend** `String`
+
++ Default: `lc`
+
++ Options: 
+
+  + `lc`  Leancloud无后端应用模式.
+  + `waline`  使用 [waline](https://github.com/lizheming/waline) 作为后端程序.
+
++ > **serverURLs**需要修改为 Waline 的服务端地址 参考 [Demo 配置](https://github.com/MiniValine/MiniValine.github.io/blob/master/waline.html#L46).
+  >
+  > waline 后端配置请参考：https://github.com/lizheming/waline
+
+
 ### **barrager** `Number`
 
 + Default: `0`
@@ -193,18 +209,6 @@
 
 + > Since the QQ avatar API exposes the user's mailbox, the function of QQ avatar is **deleted** in MiniValine version 4.x.
 
-### **backend** `String`
-
-+ Default: `lc`
-
-+ Options: 
-
-  + `lc`  Leancloud无后端应用模式.
-  + `waline`  使用 [waline](https://github.com/lizheming/waline) 作为后端程序.
-
-+ > **serverURLs**需要修改为 Waline 的服务端地址 参考 [Demo 配置](https://github.com/MiniValine/MiniValine.github.io/blob/master/waline.html#L46).
-  >
-  > waline 后端配置请参考：https://github.com/lizheming/waline
 
 
 

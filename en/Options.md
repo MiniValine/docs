@@ -44,6 +44,7 @@
 
 | Option          | type           | Default                         | description                                                  | minivaline version<br />front-end | Waline   version<br />[back-end](https://www.npmjs.com/package/@waline/vercel) |
 | --------------- | -------------- | ------------------------------- | ------------------------------------------------------------ | --------------------------------- | ------------------------------------------------------------ |
+| **backend**     | `String`       | `lc`                            | If not leancloud need choose backend , details below.        | `5.x~latest`                      | `0.8.6~latest`                                               |
 | **appId**       | `String`       | `null`                          | **Leancloud back-end Required**.<br />Your App ID, detail from [Advance](https://minivaline.js.org/docs/en/#/Options?id=get-app-idapp-key) | `1.x~latest`                      | :x:                                                          |
 | **appKey**      | `String`       | null                            | **Leancloud back-end Required**.<br /><br />Your App Key,detail from [Advance](https://minivaline.js.org/docs/en/#/Options?id=get-app-idapp-key) | `1.x~latest`                      | :x:                                                          |
 | **mode**        | `String`       | `xCss`                          | choose Style mode, The details are Under the table           | `5.x~latest`                      | `0.8.6~latest`                                               |
@@ -61,7 +62,8 @@
 | **barrager**    | `Number`       | `0`                             | barrage.                                                     | `5.x~latest`                      | `0.8.6~latest`                                               |
 | **role**        | `String`       | `admin`                         | administrator role, details below.                           | `3.x~latest`                      | :x:                                                          |
 | **closeCSS**    | `Boolean`      | `false`                         | Turn off loading CSS.                                        | `4.x~latest`                      | `0.8.6~latest`                                               |
-| **backend**     | `String`       | `lc`                            | If not leancloud need choose backend , details below.        | `5.x~latest`                      | `0.8.6~latest`                                               |
+|                 |                |                                 |                                                              |                                   |                                                              |
+|                 |                |                                 |                                                              |                                   |                                                              |
 |                 |                |                                 |                                                              |                                   |                                                              |
 |                 |                |                                 | Here are the obsolete configurations, usually changed or deleted |                                   |                                                              |
 | **math**        | `Boolean`      | `true`                          | **Changed** Support MathJax                                  | `1.x~4.x`                         | :x:                                                          |
@@ -163,6 +165,21 @@
   
       + > Now only support waline.
 
+### **backend** `String`
+
++ Default: `lc`
+
++ Options: 
+
+  + `lc`  Leancloud no back end application mode.
+  + `waline`  Use [waline](https://github.com/lizheming/waline) As the back-end program
+
++ >  **serverURLs ** needs to be changed to the server address of waline. Refer to [demo configuration](https://github.com/MiniValine/MiniValine.github.io/blob/master/waline.html#L46).
+  >
+  > For the backend configuration of waline, please refer to : https://github.com/lizheming/waline
+
+
+
 ### **barrager** `Number`
 
 + Default: `0`
@@ -190,19 +207,6 @@
 + Enable QQ avatar API.
 
 + > Since the QQ avatar API exposes the user's mailbox, the function of QQ avatar is **deleted** in MiniValine version 4.x.
-
-### **backend** `String`
-
-+ Default: `lc`
-
-+ Options: 
-
-  + `lc`  Leancloud no back end application mode.
-  + `waline`  Use [waline](https://github.com/lizheming/waline) As the back-end program
-
-+ >  **serverURLs ** needs to be changed to the server address of waline. Refer to [demo configuration](https://github.com/MiniValine/MiniValine.github.io/blob/master/waline.html#L46).
-  >
-  > For the backend configuration of waline, please refer to : https://github.com/lizheming/waline
 
 
 
