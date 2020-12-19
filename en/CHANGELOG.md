@@ -19,6 +19,8 @@
 - option.enableFlag
 - option.enableUA
 - option.RecordIP
+- option.avatarUrl
+- option.avatarD
 
 ### Change
 

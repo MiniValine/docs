@@ -19,10 +19,10 @@
 >
 > 比如 [hexo-next-minivaline](https://github.com/MiniValine/hexo-next-minivaline) | [docsify-minivaline](https://github.com/MiniValine/docsify-minivaline) **不要**添加这个选项
 
-| Option       | type     | Required or Default          | description                      | Minivaline<br />前端版本 | Waline    <br />后端版本 |
-| ------------ | -------- | ---------------------------- | -------------------------------- | ------------------------ | ------------------------ |
-| **el**       | `String` | **Required**.                | [object HTMLDivElement] 挂载在哪 | `1.x~latest`             | `0.8.6~latest`           |
-| **pathname** | `String` | Default: `location.pathname` | 文章路径，详见表格底下备注       | `1.x~latest`             | `0.8.6~latest`           |
+| Option   | type     | Required or Default          | description                      | Minivaline<br />前端版本 | Waline    <br />后端版本 |
+| -------- | -------- | ---------------------------- | -------------------------------- | ------------------------ | ------------------------ |
+| **el**   | `String` | **Required**.                | [object HTMLDivElement] 挂载在哪 | `1.x~latest`             | `0.8.6~latest`           |
+| **path** | `String` | Default: `location.pathname` | 文章路径，详见表格底下备注       | `1.x~latest`             | `0.8.6~latest`           |
 
 ### **el** `String`
 
@@ -31,7 +31,7 @@
 + > 即挂载在什么地方，可以在 [**Install**](https://minivaline.js.org/docs/cn/#/Install) 找到例子
   >
 
-### **pathname** `String`
+### **path** `String`
 
 + Default: `location.pathname`
 
@@ -61,10 +61,12 @@
 | **maxNest**     | `Number`       | `6`             | 评论引用最大深度                                             | `1.x~latest`             | `0.8.6~latest`           |
 | **pageSize**    | `Number`       | `6`             | Pagination size.                                             | `1.x~latest`             | `0.8.6~latest`           |
 | **visitor**     | `Boolean`      | `false`         | 仅提供“文章阅读访问统计”和“整个站点访问统计”。               | `5.x~latest`             | `0.8.6~latest`           |
-| **serverURLs**  | `String`       | leancloud国际版 | 后端具体地址                                                 | `1.x~latest`             | `0.8.6~latest`           |
+| **serverURL**   | `String`       | leancloud国际版 | 后端具体地址                                                 | `1.x~latest`             | `0.8.6~latest`           |
 | **barrager**    | `Number`       | `0`             | 弹幕                                                         | `5.x~latest`             | `0.8.6~latest`           |
 | **role**        | `String`       | `admin`         | 角色                                                         | `3.x~latest`             | :x:                      |
 | **closeCSS**    | `Boolean`      | `false`         | 关闭CSS样式                                                  | `4.x~latest`             | `0.8.6~latest`           |
+| **avatarUrl**   | `String`       | gravatar头像CDN | 头像CDN                                                      | `5.x~latest`             | `0.8.6~latest`           |
+| **avatarD**     | `String`       | 默认头像        | 默认头像                                                     | `5.x~latest`             | `0.8.6~latest`           |
 |                 |                |                 |                                                              |                          |                          |
 |                 |                |                 |                                                              |                          |                          |
 |                 |                |                 |                                                              |                          |                          |
@@ -144,7 +146,7 @@
 
 
 
-### **serverURLs** `String`
+### **serverURL** `String`
 
 + Default: `http[s]://[tab/us].avoscloud.com` 即
 
@@ -177,7 +179,7 @@
   + `lc`  Leancloud无后端应用模式.
   + `waline`  使用 [waline](https://github.com/lizheming/waline) 作为后端程序.
 
-+ > **serverURLs**需要修改为 Waline 的服务端地址 参考 [Demo 配置](https://github.com/MiniValine/MiniValine.github.io/blob/master/waline.html#L46).
++ > **serverURL**需要修改为 Waline 的服务端地址 参考 [Demo 配置](https://github.com/MiniValine/MiniValine.github.io/blob/master/waline.html#L46).
   >
   > waline 后端配置请参考：https://github.com/lizheming/waline
 
@@ -194,10 +196,25 @@
 ### **role** `String`
 
 + Default: `admin`
-
 + Write permissions for the administrator role. 
-
 + [Valine-Android](https://github.com/yinhanlei/Valine-Android)  [Valine-iOS](https://github.com/xaoxuu/Valine-iOS) 
+
+
+
+### **avatarUrl** `String`
+
++ Default: `https://secure.gravatar.com/avatar`
++ 头像CDN
+
+
+
+### **avatarD** `String`
+
++ Default: `robohash`
++ 默认头像
++ 详见 https://secure.gravatar.com/site/implement/images/#default-image
+
+
 
 ### **enableQQ** `Boolean`
 

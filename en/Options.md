@@ -17,10 +17,10 @@
 
 !> Some plugins,which has been installed before, may not be required,  **DO NOT** ADD Mount Options, eg  [hexo-next-minivaline](https://github.com/MiniValine/hexo-next-minivaline) | [docsify-minivaline](https://github.com/MiniValine/docsify-minivaline) 
 
-| Option       | type     | Required or Default          | Minivaline version<br />front-end | Waline    version<br />[back-end](https://www.npmjs.com/package/@waline/vercel) |
-| ------------ | -------- | ---------------------------- | --------------------------------- | ------------------------------------------------------------ |
-| **el**       | `String` | **Required**.                | `1.x~latest`                      | `0.8.6~latest`                                               |
-| **pathname** | `String` | Default: `location.pathname` | `1.x~latest`                      | `0.8.6~latest`                                               |
+| Option   | type     | Required or Default          | Minivaline version<br />front-end | Waline    version<br />[back-end](https://www.npmjs.com/package/@waline/vercel) |
+| -------- | -------- | ---------------------------- | --------------------------------- | ------------------------------------------------------------ |
+| **el**   | `String` | **Required**.                | `1.x~latest`                      | `0.8.6~latest`                                               |
+| **path** | `String` | Default: `location.pathname` | `1.x~latest`                      | `0.8.6~latest`                                               |
 
 ### **el** `String`
 
@@ -28,7 +28,7 @@
 
 + > You can find example at [**Install**](https://minivaline.js.org/docs/en/#/Install)
 
-### **pathname** `String`
+### **path** `String`
 
 + Default: `location.pathname`
 
@@ -58,10 +58,12 @@
 | **maxNest**     | `Number`       | `6`                             | Sub-comment maximum nesting depth.                           | `1.x~latest`                      | `0.8.6~latest`                                               |
 | **pageSize**    | `Number`       | `6`                             | Pagination size.                                             | `1.x~latest`                      | `0.8.6~latest`                                               |
 | **visitor**     | `Boolean`      | `false`                         | Only **article reading access statistics**and <br />**whole site access statistics** are provided. | `5.x~latest`                      | `0.8.6~latest`                                               |
-| **serverURLs**  | `String`       | Leancloud International Edition | choose backend URL, details below.                           | `1.x~latest`                      | `0.8.6~latest`                                               |
+| **serverURL**   | `String`       | Leancloud International Edition | choose backend URL, details below.                           | `1.x~latest`                      | `0.8.6~latest`                                               |
 | **barrager**    | `Number`       | `0`                             | barrage.                                                     | `5.x~latest`                      | `0.8.6~latest`                                               |
 | **role**        | `String`       | `admin`                         | administrator role, details below.                           | `3.x~latest`                      | :x:                                                          |
 | **closeCSS**    | `Boolean`      | `false`                         | Turn off loading CSS.                                        | `4.x~latest`                      | `0.8.6~latest`                                               |
+| **avatarUrl**   | `String`       | gravatar CDN                    | gravatar  CDN                                                | `5.x~latest`                      | `0.8.6~latest`                                               |
+| **avatarD**     | `String`       | Default Avatar                  | Default Avatar                                               | `5.x~latest`                      | `0.8.6~latest`                                               |
 |                 |                |                                 |                                                              |                                   |                                                              |
 |                 |                |                                 |                                                              |                                   |                                                              |
 |                 |                |                                 |                                                              |                                   |                                                              |
@@ -141,7 +143,7 @@
   - [How to customize emoticons?](https://minivaline.js.org/docs/en/#/Options?id=how-to-customize-emoticons)
 
 
-### **serverURLs** `String`
+### **serverURL** `String`
 
 + Default: `http[s]://[tab/us].avoscloud.com`
   
@@ -174,7 +176,7 @@
   + `lc`  Leancloud no back end application mode.
   + `waline`  Use [waline](https://github.com/lizheming/waline) As the back-end program
 
-+ >  **serverURLs ** needs to be changed to the server address of waline. Refer to [demo configuration](https://github.com/MiniValine/MiniValine.github.io/blob/master/waline.html#L46).
++ >  **serverURL ** needs to be changed to the server address of waline. Refer to [demo configuration](https://github.com/MiniValine/MiniValine.github.io/blob/master/waline.html#L46).
   >
   > For the backend configuration of waline, please refer to : https://github.com/lizheming/waline
 
@@ -193,10 +195,25 @@
 ### **role** `String`
 
 + Default: `admin`
-
 + Write permissions for the administrator role. 
-
 + [Valine-Android](https://github.com/yinhanlei/Valine-Android)  [Valine-iOS](https://github.com/xaoxuu/Valine-iOS) 
+
+
+
+### **avatarUrl** `String`
+
++ Default: `https://secure.gravatar.com/avatar`
++ Avatar CDN
+
+
+
+### **avatarD** `String`
+
++ Default: `robohash`
++ Default Avatar
++ See https://secure.gravatar.com/site/implement/images/#default-image
+
+
 
 ### **enableQQ** `Boolean`
 
