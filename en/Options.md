@@ -17,10 +17,10 @@
 
 !> Some plugins,which has been installed before, may not be required,  **DO NOT** ADD Mount Options, eg  [hexo-next-minivaline](https://github.com/MiniValine/hexo-next-minivaline) | [docsify-minivaline](https://github.com/MiniValine/docsify-minivaline) 
 
-| Option   | type     | Required or Default          | Minivaline version<br />front-end | Waline    version<br />[back-end](https://www.npmjs.com/package/@waline/vercel) |
-| -------- | -------- | ---------------------------- | --------------------------------- | ------------------------------------------------------------ |
-| **el**   | `String` | **Required**.                | `1.x~latest`                      | `0.8.6~latest`                                               |
-| **path** | `String` | Default: `location.pathname` | `1.x~latest`                      | `0.8.6~latest`                                               |
+| Option   | type     | Required or Default                             | Minivaline version<br />front-end | Waline    version<br />[back-end](https://www.npmjs.com/package/@waline/vercel) |
+| -------- | -------- | ----------------------------------------------- | --------------------------------- | ------------------------------------------------------------ |
+| **el**   | `String` | **Required**.                                   | `1.x~latest`                      | `0.8.6~latest`                                               |
+| **path** | `String` | Default: The final value of `location.pathname` | `1.x~latest`                      | `0.8.6~latest`                                               |
 
 ### **el** `String`
 
@@ -30,51 +30,51 @@
 
 ### **path** `String`
 
-+ Default: `location.pathname`
++ Default: The final value of `location.pathname`
 
 + The pathname of the page.
 
 + > You can find example at [**Install**](https://minivaline.js.org/docs/en/#/Install)
   >
-  > Note that sometimes quotation marks are not needed as a variable.[detail](https://github.com/MiniValine/MiniValine/issues/250)
+  > Note that sometimes quotation marks are not needed as a variable.
 
 
 
 ## Base Options
 
-| Option          | type           | Default                         | description                                                  | minivaline version<br />front-end | Waline   version<br />[back-end](https://www.npmjs.com/package/@waline/vercel) |
-| --------------- | -------------- | ------------------------------- | ------------------------------------------------------------ | --------------------------------- | ------------------------------------------------------------ |
-| **backend**     | `String`       | `lc`                            | If not leancloud need choose backend , details below.        | `5.x~latest`                      | `0.8.6~latest`                                               |
-| **appId**       | `String`       | `null`                          | **Leancloud back-end Required**.<br />Your App ID, detail from [Advance](https://minivaline.js.org/docs/en/#/Options?id=get-app-idapp-key) | `1.x~latest`                      | :x:                                                          |
-| **appKey**      | `String`       | null                            | **Leancloud back-end Required**.<br /><br />Your App Key,detail from [Advance](https://minivaline.js.org/docs/en/#/Options?id=get-app-idapp-key) | `1.x~latest`                      | :x:                                                          |
-| **mode**        | `String`       | `xCss`                          | choose Style mode, The details are Under the table           | `5.x~latest`                      | `0.8.6~latest`                                               |
-| **placeholder** | `String`       | `null`                          | Input Placeholder                                            | `1.x~latest`                      | `0.8.6~latest`                                               |
-| **math**        | `Boolean`      | `false`                         | Support MathJax, details below.                              | `5.x~latest`                      | :x:                                                          |
-| **md**          | `Boolean`      | `false`                         | Support Markdown.                                            | `5.x~latest`                      | :x:                                                          |
-| **dark**        | `Boolean`      | `false`                         | [Dark model.](https://minivaline.js.org/docs/en/#/Options?id=how-to-add-dark-mode) | `3.x~latest`                      | `0.8.6~latest`                                               |
-| **lang**        | `String`       | navigator userLanguage          | support i18n,details below.                                  | `1.x~latest`                      | `0.8.6~latest`                                               |
-| **emoticonUrl** | `String Array` | built-in emoticon               | yourself emoticonUrl, details below.                         | `1.x~latest`                      | `0.8.6~latest`                                               |
-| **RecordIP**    | `Boolean`      | `false`                         | Record commenter IP.                                         | `5.x~latest`                      | :x:                                                          |
-| **maxNest**     | `Number`       | `6`                             | Sub-comment maximum nesting depth.                           | `1.x~latest`                      | `0.8.6~latest`                                               |
-| **pageSize**    | `Number`       | `6`                             | Pagination size.                                             | `1.x~latest`                      | `0.8.6~latest`                                               |
-| **visitor**     | `Boolean`      | `false`                         | Only **article reading access statistics**and <br />**whole site access statistics** are provided. | `5.x~latest`                      | `0.8.6~latest`                                               |
-| **serverURL**   | `String`       | Leancloud International Edition | choose backend URL, details below.                           | `1.x~latest`                      | `0.8.6~latest`                                               |
-| **barrager**    | `Number`       | `0`                             | barrage.                                                     | `5.x~latest`                      | `0.8.6~latest`                                               |
-| **role**        | `String`       | `admin`                         | administrator role, details below.                           | `3.x~latest`                      | :x:                                                          |
-| **closeCSS**    | `Boolean`      | `false`                         | Turn off loading CSS.                                        | `4.x~latest`                      | `0.8.6~latest`                                               |
-| **avatarUrl**   | `String`       | gravatar CDN                    | gravatar  CDN                                                | `5.x~latest`                      | `0.8.6~latest`                                               |
-| **avatarD**     | `String`       | Default Avatar                  | Default Avatar                                               | `5.x~latest`                      | `0.8.6~latest`                                               |
-|                 |                |                                 |                                                              |                                   |                                                              |
-|                 |                |                                 |                                                              |                                   |                                                              |
-|                 |                |                                 |                                                              |                                   |                                                              |
-|                 |                |                                 | Here are the obsolete configurations, usually changed or deleted |                                   |                                                              |
-| **math**        | `Boolean`      | `true`                          | **Changed** Support MathJax                                  | `1.x~4.x`                         | :x:                                                          |
-| **md**          | `Boolean`      | `true`                          | **Changed**  Support Markdown.                               | `1.x~4.x`                         | :x:                                                          |
-| **NoRecordIP**  | `Boolean`      | `false`                         | **Deleted**  Do  not  Record commenter IP.                   | `1.x~4.x`                         | :x:                                                          |
-| **visitor**     | `Boolean`      | `true`                          | **Changed**   Only **article reading access statistics**and <br />**whole site access statistics** are provided. | `2.x~4.x`                         | :x:                                                          |
-| **barrager**    | `Number`       | `1`                             | **Changed**  barrage.                                        | `3.x~4.x`                         | :x:                                                          |
-| **mode**        | `String`       | `DesertsP`                      | **Changed**  choose Style mode, The details are Under the table | `2.x~4.x`                         | :x:                                                          |
-| **enableQQ**    | `Boolean`      | `false`                         | **Deleted**  The details are Under the table                 | `2.x~3.x`                         | :x:                                                          |
+| Option                 | type           | Default                         | description                                                  | minivaline version<br />front-end | Waline   version<br />[back-end](https://www.npmjs.com/package/@waline/vercel) |
+| ---------------------- | -------------- | ------------------------------- | ------------------------------------------------------------ | --------------------------------- | ------------------------------------------------------------ |
+| **backend**            | `String`       | `lc`                            | If not leancloud need choose backend , details below.        | `5.x~latest`                      | `0.8.6~latest`                                               |
+| **appId**              | `String`       | `null`                          | **Leancloud back-end Required**.<br />Your App ID, detail from [Advance](https://minivaline.js.org/docs/en/#/Options?id=get-app-idapp-key) | `1.x~latest`                      | :x:                                                          |
+| **appKey**             | `String`       | null                            | **Leancloud back-end Required**.<br /><br />Your App Key,detail from [Advance](https://minivaline.js.org/docs/en/#/Options?id=get-app-idapp-key) | `1.x~latest`                      | :x:                                                          |
+| **mode**               | `String`       | `xCss`                          | choose Style mode, The details are Under the table           | `5.x~latest`                      | `0.8.6~latest`                                               |
+| **placeholder**        | `String`       | `null`                          | Input Placeholder                                            | `1.x~latest`                      | `0.8.6~latest`                                               |
+| **math**               | `Boolean`      | `false`                         | Support MathJax, details below.                              | `5.x~latest`                      | :x:                                                          |
+| **md**                 | `Boolean`      | `false`                         | Support Markdown.                                            | `5.x~latest`                      | :x:                                                          |
+| **dark**               | `Boolean`      | `false`                         | [Dark model.](https://minivaline.js.org/docs/en/#/Options?id=how-to-add-dark-mode) | `3.x~latest`                      | `0.8.6~latest`                                               |
+| **lang**               | `String`       | navigator userLanguage          | support i18n,details below.                                  | `1.x~latest`                      | `0.8.6~latest`                                               |
+| **emoticonUrl**        | `String Array` | built-in emoticon               | yourself emoticonUrl, details below.                         | `1.x~latest`                      | `0.8.6~latest`                                               |
+| **RecordIP**           | `Boolean`      | `false`                         | Record commenter IP.                                         | `5.x~latest`                      | :x:                                                          |
+| **maxNest**            | `Number`       | `6`                             | Sub-comment maximum nesting depth.                           | `1.x~latest`                      | `0.8.6~latest`                                               |
+| **pageSize**           | `Number`       | `6`                             | Pagination size.                                             | `1.x~latest`                      | `0.8.6~latest`                                               |
+| **visitor**            | `Boolean`      | `false`                         | Only **article reading access statistics**and <br />**whole site access statistics** are provided. | `5.x~latest`                      | `0.8.6~latest`                                               |
+| **serverURL**          | `String`       | Leancloud International Edition | choose backend URL, details below.                           | `1.x~latest`                      | `0.8.6~latest`                                               |
+| **barrager**           | `Number`       | `0`                             | barrage.                                                     | `5.x~latest`                      | `0.8.6~latest`                                               |
+| **role**               | `String`       | `admin`                         | administrator role, details below.                           | `3.x~latest`                      | :x:                                                          |
+| **closeCSS**           | `Boolean`      | `false`                         | Turn off loading CSS.                                        | `4.x~latest`                      | `0.8.6~latest`                                               |
+| **avatarUrl**          | `String`       | gravatar CDN                    | gravatar  CDN                                                | `5.x~latest`                      | `0.8.6~latest`                                               |
+| **avatarD**            | `String`       | Default Avatar                  | Default Avatar                                               | `5.x~latest`                      | `0.8.6~latest`                                               |
+| **closeMarkdownStyle** | `Boolean`      | `false`                         | Turn off the built-in markdown style                         | `5.x~latest`                      | `0.8.6~latest`                                               |
+|                        |                |                                 |                                                              |                                   |                                                              |
+|                        |                |                                 |                                                              |                                   |                                                              |
+|                        |                |                                 | Here are the obsolete configurations, usually changed or deleted |                                   |                                                              |
+| **math**               | `Boolean`      | `true`                          | **Changed** Support MathJax                                  | `1.x~4.x`                         | :x:                                                          |
+| **md**                 | `Boolean`      | `true`                          | **Changed**  Support Markdown.                               | `1.x~4.x`                         | :x:                                                          |
+| **NoRecordIP**         | `Boolean`      | `false`                         | **Deleted**  Do  not  Record commenter IP.                   | `1.x~4.x`                         | :x:                                                          |
+| **visitor**            | `Boolean`      | `true`                          | **Changed**   Only **article reading access statistics**and <br />**whole site access statistics** are provided. | `2.x~4.x`                         | :x:                                                          |
+| **barrager**           | `Number`       | `1`                             | **Changed**  barrage.                                        | `3.x~4.x`                         | :x:                                                          |
+| **mode**               | `String`       | `DesertsP`                      | **Changed**  choose Style mode, The details are Under the table | `2.x~4.x`                         | :x:                                                          |
+| **enableQQ**           | `Boolean`      | `false`                         | **Deleted**  The details are Under the table                 | `2.x~3.x`                         | :x:                                                          |
 
 
 

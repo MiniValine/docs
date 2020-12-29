@@ -22,6 +22,7 @@
 + option.RecordIP
 + option.avatarUrl
 + option.avatarD
++ option.closeMarkdownStyle
 
 ### Change
 

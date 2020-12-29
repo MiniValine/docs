@@ -19,10 +19,10 @@
 >
 > 比如 [hexo-next-minivaline](https://github.com/MiniValine/hexo-next-minivaline) | [docsify-minivaline](https://github.com/MiniValine/docsify-minivaline) **不要**添加这个选项
 
-| Option   | type     | Required or Default          | description                      | Minivaline<br />前端版本 | Waline    <br />后端版本 |
-| -------- | -------- | ---------------------------- | -------------------------------- | ------------------------ | ------------------------ |
-| **el**   | `String` | **Required**.                | [object HTMLDivElement] 挂载在哪 | `1.x~latest`             | `0.8.6~latest`           |
-| **path** | `String` | Default: `location.pathname` | 文章路径，详见表格底下备注       | `1.x~latest`             | `0.8.6~latest`           |
+| Option   | type     | Required or Default                      | description                      | Minivaline<br />前端版本 | Waline    <br />后端版本 |
+| -------- | -------- | ---------------------------------------- | -------------------------------- | ------------------------ | ------------------------ |
+| **el**   | `String` | **Required**.                            | [object HTMLDivElement] 挂载在哪 | `1.x~latest`             | `0.8.6~latest`           |
+| **path** | `String` | Default: `location.pathname`的最终的取值 | 文章路径，详见表格底下备注       | `1.x~latest`             | `0.8.6~latest`           |
 
 ### **el** `String`
 
@@ -33,51 +33,51 @@
 
 ### **path** `String`
 
-+ Default: `location.pathname`
++ Default: `location.pathname`的最终的取值
 
 + The pathname of the page
 
 + > 即 文章路径 ，可以在 [**Install**](https://minivaline.js.org/docs/cn/#/Install) 找到例子
   >
-  > 注意如果开发一个主题或插件，有些场景不用加引号，因为本身是变量，加了引号变成常字符串了。[detail](https://github.com/MiniValine/MiniValine/issues/250)
+  > 注意如果开发一个主题或插件，有些场景不用加引号，因为本身是变量，加了引号变成常字符串了。
 
 
 
 ## Base Options
 
-| Option          | type           | Default         | description                                                  | Minivaline<br />前端版本 | Waline    <br />后端版本 |
-| --------------- | -------------- | --------------- | ------------------------------------------------------------ | ------------------------ | ------------------------ |
-| **backend**     | `String`       | `lc`            | 后端类型                                                     | `5.x~latest`             | `0.8.6~latest`           |
-| **appId**       | `String`       | `null`          | 注意**leancloud后端**这个**必须要有的**，你的 App ID 详见 [Advance](https://minivaline.js.org/docs/cn/#/Options?id=get-app-idapp-key) | `1.x~latest`             | :x:                      |
-| **appKey**      | `String`       | `null`          | 注意**leancloud后端**这个**必须要有的**，你的 App Key,详见 [Advance](https://minivaline.js.org/docs/cn/#/Options?id=get-app-idapp-key) | `1.x~latest`             | :x:                      |
-| **mode**        | `String`       | `xCss`          | 样式模式                                                     | `5.x~latest`             | `0.8.6~latest`           |
-| **placeholder** | `String`       | `null`          | 输入框占位符                                                 | `1.x~latest`             | `0.8.6~latest`           |
-| **math**        | `Boolean`      | `false`         | 支持数学公式                                                 | `5.x~latest`             | :x:                      |
-| **md**          | `Boolean`      | `false`         | 内置markdown                                                 | `5.x~latest`             | :x:                      |
-| **dark**        | `Boolean`      | `false`         | 黑暗模式                                                     | `3.x~latest`             | `0.8.6~latest`           |
-| **lang**        | `String`       | 用户目前语言    | 语言                                                         | `1.x~latest`             | `0.8.6~latest`           |
-| **emoticonUrl** | `String Array` | 内置表情        | 自定义表情链接                                               | `1.x~latest`             | `0.8.6~latest`           |
-| **RecordIP**    | `Boolean`      | `false`         | 记录评论者IP                                                 | `5.x~latest`             | :x:                      |
-| **maxNest**     | `Number`       | `6`             | 评论引用最大深度                                             | `1.x~latest`             | `0.8.6~latest`           |
-| **pageSize**    | `Number`       | `6`             | Pagination size.                                             | `1.x~latest`             | `0.8.6~latest`           |
-| **visitor**     | `Boolean`      | `false`         | 仅提供“文章阅读访问统计”和“整个站点访问统计”。               | `5.x~latest`             | `0.8.6~latest`           |
-| **serverURL**   | `String`       | leancloud国际版 | 后端具体地址                                                 | `1.x~latest`             | `0.8.6~latest`           |
-| **barrager**    | `Number`       | `0`             | 弹幕                                                         | `5.x~latest`             | `0.8.6~latest`           |
-| **role**        | `String`       | `admin`         | 角色                                                         | `3.x~latest`             | :x:                      |
-| **closeCSS**    | `Boolean`      | `false`         | 关闭CSS样式                                                  | `4.x~latest`             | `0.8.6~latest`           |
-| **avatarUrl**   | `String`       | gravatar头像CDN | 头像CDN                                                      | `5.x~latest`             | `0.8.6~latest`           |
-| **avatarD**     | `String`       | 默认头像        | 默认头像                                                     | `5.x~latest`             | `0.8.6~latest`           |
-|                 |                |                 |                                                              |                          |                          |
-|                 |                |                 |                                                              |                          |                          |
-|                 |                |                 |                                                              |                          |                          |
-|                 |                |                 | 下面是已经过时的配置,通常是已经更改或删除                    |                          |                          |
-| **math**        | `Boolean`      | `true`          | **Changed** 支持数学公式                                     | `1.x~4.x`                | :x:                      |
-| **md**          | `Boolean`      | `true`          | **Changed**  内置markdown                                    | `1.x~4.x`                | :x:                      |
-| **NoRecordIP**  | `Boolean`      | `false`         | **Deleted**  不记录评论者IP                                  | `1.x~4.x`                | :x:                      |
-| **visitor**     | `Boolean`      | `true`          | **Changed**   仅提供“文章阅读访问统计”和“整个站点访问统计”。 | `2.x~4.x`                | :x:                      |
-| **barrager**    | `Number`       | `1`             | **Changed**  弹幕                                            | `3.x~4.x`                | :x:                      |
-| **mode**        | `String`       | `DesertsP`      | **Changed**  样式模式                                        | `2.x~4.x`                | :x:                      |
-| **enableQQ**    | `Boolean`      | `false`         | **Deleted**  详见表格底下备注,和faq                          | `2.x~3.x`                | :x:                      |
+| Option                 | type           | Default         | description                                                  | Minivaline<br />前端版本 | Waline    <br />后端版本 |
+| ---------------------- | -------------- | --------------- | ------------------------------------------------------------ | ------------------------ | ------------------------ |
+| **backend**            | `String`       | `lc`            | 后端类型                                                     | `5.x~latest`             | `0.8.6~latest`           |
+| **appId**              | `String`       | `null`          | 注意**leancloud后端**这个**必须要有的**，你的 App ID 详见 [Advance](https://minivaline.js.org/docs/cn/#/Options?id=get-app-idapp-key) | `1.x~latest`             | :x:                      |
+| **appKey**             | `String`       | `null`          | 注意**leancloud后端**这个**必须要有的**，你的 App Key,详见 [Advance](https://minivaline.js.org/docs/cn/#/Options?id=get-app-idapp-key) | `1.x~latest`             | :x:                      |
+| **mode**               | `String`       | `xCss`          | 样式模式                                                     | `5.x~latest`             | `0.8.6~latest`           |
+| **placeholder**        | `String`       | `null`          | 输入框占位符                                                 | `1.x~latest`             | `0.8.6~latest`           |
+| **math**               | `Boolean`      | `false`         | 支持数学公式                                                 | `5.x~latest`             | :x:                      |
+| **md**                 | `Boolean`      | `false`         | 内置markdown                                                 | `5.x~latest`             | :x:                      |
+| **dark**               | `Boolean`      | `false`         | 黑暗模式                                                     | `3.x~latest`             | `0.8.6~latest`           |
+| **lang**               | `String`       | 用户目前语言    | 语言                                                         | `1.x~latest`             | `0.8.6~latest`           |
+| **emoticonUrl**        | `String Array` | 内置表情        | 自定义表情链接                                               | `1.x~latest`             | `0.8.6~latest`           |
+| **RecordIP**           | `Boolean`      | `false`         | 记录评论者IP                                                 | `5.x~latest`             | :x:                      |
+| **maxNest**            | `Number`       | `6`             | 评论引用最大深度                                             | `1.x~latest`             | `0.8.6~latest`           |
+| **pageSize**           | `Number`       | `6`             | Pagination size.                                             | `1.x~latest`             | `0.8.6~latest`           |
+| **visitor**            | `Boolean`      | `false`         | 仅提供“文章阅读访问统计”和“整个站点访问统计”。               | `5.x~latest`             | `0.8.6~latest`           |
+| **serverURL**          | `String`       | leancloud国际版 | 后端具体地址                                                 | `1.x~latest`             | `0.8.6~latest`           |
+| **barrager**           | `Number`       | `0`             | 弹幕                                                         | `5.x~latest`             | `0.8.6~latest`           |
+| **role**               | `String`       | `admin`         | 角色                                                         | `3.x~latest`             | :x:                      |
+| **closeCSS**           | `Boolean`      | `false`         | 关闭CSS样式                                                  | `4.x~latest`             | `0.8.6~latest`           |
+| **avatarUrl**          | `String`       | gravatar头像CDN | 头像CDN                                                      | `5.x~latest`             | `0.8.6~latest`           |
+| **avatarD**            | `String`       | 默认头像        | 默认头像                                                     | `5.x~latest`             | `0.8.6~latest`           |
+| **closeMarkdownStyle** | `Boolean`      | `false`         | 关闭内置Markdown样式                                         | `5.x~latest`             | `0.8.6~latest`           |
+|                        |                |                 |                                                              |                          |                          |
+|                        |                |                 |                                                              |                          |                          |
+|                        |                |                 | 下面是已经过时的配置,通常是已经更改或删除                    |                          |                          |
+| **math**               | `Boolean`      | `true`          | **Changed** 支持数学公式                                     | `1.x~4.x`                | :x:                      |
+| **md**                 | `Boolean`      | `true`          | **Changed**  内置markdown                                    | `1.x~4.x`                | :x:                      |
+| **NoRecordIP**         | `Boolean`      | `false`         | **Deleted**  不记录评论者IP                                  | `1.x~4.x`                | :x:                      |
+| **visitor**            | `Boolean`      | `true`          | **Changed**   仅提供“文章阅读访问统计”和“整个站点访问统计”。 | `2.x~4.x`                | :x:                      |
+| **barrager**           | `Number`       | `1`             | **Changed**  弹幕                                            | `3.x~4.x`                | :x:                      |
+| **mode**               | `String`       | `DesertsP`      | **Changed**  样式模式                                        | `2.x~4.x`                | :x:                      |
+| **enableQQ**           | `Boolean`      | `false`         | **Deleted**  详见表格底下备注,和faq                          | `2.x~3.x`                | :x:                      |
 
 
 
