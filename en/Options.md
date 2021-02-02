@@ -1,21 +1,21 @@
 # Options
 
-!> When you change version, care about [CHANGELOG](https://minivaline.js.org/docs/en/#/CHANGELOG) before.
+!> Pelease read the [CHANGELOG](https://minivaline.js.org/docs/en/#/CHANGELOG) before you change the version.
 
 
 
 ## Mode
 
-!> Note that the following are optional mode combinations. By default, both the minivaline and leancloud combinations are supported. The minivaline front-end and waline back-end must both support options to work. If one is not supported, an unknown error may occur.
+!> Note that the following are optional mode combinations. By default, any combination of MiniValine and LeanCloud is supported. Combinations of MiniValine front-end and Waline back-end require both to support the same options. If one is not supported, an unknown error may occur.
 
 <iframe src="./assets/mode.en.html" width="200" height="600"></iframe>
 
-!> The minivaline front-end is directly connected to the leancloud combination, which has high-risk security vulnerabilities. This combination is only used as a test post for developers, and is not recommended for online deployment. It is recommended to use the combination with server-side middle layer.
+!> The MiniValine front-end is directly connected to the LeanCloud combination, which has high-risk security vulnerabilities. This combination should only used as a test post for developers, and is not recommended for production deployment. It is recommended to use the combination with server-side middle layer.
 
 
 ## Mount Options
 
-!> Some plugins,which has been installed before, may not be required,  **DO NOT** ADD Mount Options, eg  [hexo-next-minivaline](https://github.com/MiniValine/hexo-next-minivaline) | [docsify-minivaline](https://github.com/MiniValine/docsify-minivaline) 
+!> Some plugines may have pre-implemented this. **DO NOT** ADD `Mount Options` in such cases, e.g.  [hexo-next-minivaline](https://github.com/MiniValine/hexo-next-minivaline) | [docsify-minivaline](https://github.com/MiniValine/docsify-minivaline) 
 
 | Option   | type     | Required or Default                             | Minivaline version<br />front-end | Waline    version<br />[back-end](https://www.npmjs.com/package/@waline/vercel) |
 | -------- | -------- | ----------------------------------------------- | --------------------------------- | ------------------------------------------------------------ |
@@ -26,7 +26,7 @@
 
 + **Required**. [object HTMLDivElement]
 
-+ > You can find example at [**Install**](https://minivaline.js.org/docs/en/#/Install)
++ > You can find examples at [**Install**](https://minivaline.js.org/docs/en/#/Install)
 
 ### **path** `String`
 
@@ -34,9 +34,9 @@
 
 + The pathname of the page.
 
-+ > You can find example at [**Install**](https://minivaline.js.org/docs/en/#/Install)
++ > You can find examples at [**Install**](https://minivaline.js.org/docs/en/#/Install)
   >
-  > Note that sometimes quotation marks are not needed as a variable.
+  > Note: when developing a theme or plugin, the quotation marks may not be needed in some scenarios when `path` is a variable. Adding quotation marks would instead turn it into a constant string.
 
 
 
@@ -176,9 +176,9 @@
   + `lc`  Leancloud no back end application mode.
   + `waline`  Use [waline](https://github.com/lizheming/waline) As the back-end program
 
-+ >  **serverURL ** needs to be changed to the server address of waline. Refer to [demo configuration](https://github.com/MiniValine/MiniValine.github.io/blob/master/waline.html#L46).
++ >  **serverURL ** needs to be changed to the server address of Waline. Refer to [demo configuration](https://github.com/MiniValine/MiniValine.github.io/blob/master/waline.html#L46).
   >
-  > For the backend configuration of waline, please refer to : https://github.com/lizheming/waline
+  > For the backend configuration of Waline, please refer to : https://github.com/lizheming/waline
 
 
 
@@ -268,7 +268,7 @@
 
 + If `cloudflag` is turned on, the setting of `Visitor Flag Local Options` is invalid.
 
-+ How to Set Visitor Flag Cloud Option For xCss Style mode? [**Advance below** please](https://minivaline.js.org/docs/en/#/Options?id=how-to-set-visitor-flag-cloud-option-for-xcss-style-mode)
++ How to set visitor Flag Cloud Option for xCss style mode? [**Advance below** please.](https://minivaline.js.org/docs/en/#/Options?id=how-to-set-visitor-flag-cloud-option-for-xcss-style-mode)
 
 #### **region** `Boolean`
 
@@ -432,7 +432,7 @@ or
 
  6.Try to be faster.
 
-The author uses a `Python` script to generate `index.json` here. The friends who have the ability can try it.
+The author uses a `Python` script to generate `index.json` here. Users who have the skill can try it.
 
 Modify `FilePath` please.
 
