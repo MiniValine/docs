@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <title>MiniValine 5.x LTS</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="description" content="MiniValine">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/vue.css" />
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/src/sidebar.css" />
+</head>
+
+<body>
+    <div id="app"></div>
+    <script>
+        window.$docsify = {
+            name: 'MiniValine 5.x LTS',
+            loadSidebar: 'SUMMARY.md',
+            loadNavbar: 'Navbar.md',
+            themeColor: '#6688EE',
+            topMargin: 20,
+            search: 'auto',
+            subMaxLevel: 6,
+            notFoundPage: '404.md',
+            repo: 'MiniValine/MiniValine',
+            alias: {
+                '/.*/SUMMARY.md': '/SUMMARY.md',
+                '/.*/navbar.md': '/Navbar.md',
+            },
+            //docsify-minivaline 示例
+            MiniValine: {
+                appId: 'MEEC7WU3MbE2gfGU0apei89u-MdYXbMMI',
+                appKey: 'NQ91iwhxPcrPoAmSu4wpEJ8g',
+                placeholder: '评论一下吧~',
+                mode: 'xCss',
+                lang: 'zh-CN',
+                //更多选项 https://minivaline.js.org/docs/en/#/Options   除了 [el] 选项，这个已经在插件里体现了
+                visitor: true,
+                RecordIP: true,
+                region: true,
+                md: true,
+                math: true,
+                enableUA: true,
+			},
+            //docsify-minivaline 示例
+            plugins: [
+                function (hook, vm) {
+                    hook.beforeEach(function (html) {
+                        var url = 'https://github.com/MiniValine/docs/tree/main/v5/cn/' + vm.route.file;
+                        var editHtml = '[📝 编辑本页](' + url + ')\n';
+                        return (editHtml + html);
+                    });
+                }
+            ]
+        }
+    </script>
+    <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+    <!-- docsify-minivaline 示例 -->
+    <script src='//cdn.jsdelivr.net/npm/minivaline@5/dist/MiniValine.min.js'></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify-minivaline@latest/dist/docsify-minivaline.min.js"></script>
+    <!-- docsify-minivaline 示例 -->
+    <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify-copy-code@2.1.1/dist/docsify-copy-code.min.js"></script>
+</body>
+
+</html>
