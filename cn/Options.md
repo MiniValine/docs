@@ -123,11 +123,36 @@ MiniValine 自 version 6.x 起回归极简主义！ 因此 6.x 移除了 5.x 的
 向 uploadImageURL 发送 POST 请求，使用 uploadImageParse 方法解析返回值
 
 ```js
-new ohhho({
+new MiniValine({
   uploadImageURL:'https://xxxx上传地址',
   uploadImageParse:((res)=>{
     console.log(res)
-    return "xxxx返回的图片链接地址"
+    return "xxxx上传地址返回的图片链接地址"
+  })
+});
+```
+### 回调函数
+
+#### FinishLoaded
+
+成功挂载后回调
+
+```js
+new MiniValine({
+  FinishLoaded:(()=>{
+    console.log("FinishLoaded")
+  })
+});
+```
+
+#### PageLoaded
+
+每页加载完成后回调
+
+```js
+new MiniValine({
+  PageLoaded:(()=>{
+    console.log("PageLoaded")
   })
 });
 ```
