@@ -1,6 +1,6 @@
 <img src='https://cdn.jsdelivr.net/gh/MiniValine/MiniValine@master/.github/img/minivaline.png' width='120' align="right" />
 
-# MiniValine 5.x 版本
+# MiniValine 6.x 版本
 ------------------------------
 
 
@@ -9,7 +9,7 @@
 [![GPL Licence](https://cdn.jsdelivr.net/gh/MHuiG/imgbed/github/gpl.svg)](https://opensource.org/licenses/GPL-3.0/)
 [![npm downloads](https://img.shields.io/npm/dm/minivaline.svg?style=flat-square)](https://www.npmjs.com/package/minivaline)
 [![https://img.badgesize.io/https://unpkg.com/minivaline@latest/dist/MiniValine.min.js?compression=gzip&style=flat-square](https://img.badgesize.io/https://unpkg.com/minivaline@latest/dist/MiniValine.min.js?compression=gzip&style=flat-square)](https://unpkg.com/minivaline@latest/dist/MiniValine.min.js)
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FMiniValine%2FMiniValine.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2FMiniValine%2FMiniValine?ref=badge_shield)
+
 
 [![Build Status](https://travis-ci.com/MiniValine/MiniValine.svg?branch=master)](https://travis-ci.com/MiniValine/MiniValine)
 [![Build Status](https://github.com/MiniValine/MiniValine/workflows/Node.js%20CI/badge.svg)](https://github.com/MiniValine/MiniValine/actions)
@@ -21,7 +21,13 @@
 > MiniValine is a simple and minimalist comment system
 ------------------------------
 
-**[Demo](https://minivaline.github.io)** | **[Docs](https://minivaline.js.org/docs/)** | **[FAQs](https://minivaline.js.org/docs/en/#/FAQ)** | **[Awesome](https://github.com/MiniValine/AWESOME-MiniValine)**
+MiniValine 自 version 6.x 起回归极简主义！ 因此 6.x 移除了 5.x 的全部功能特性，只保留了基础评论功能！！！
+
+> Less is More
+------------------------------
+
+
+**[Demo](https://minivaline.github.io)** | **[Docs](https://minivaline.js.org/docs/)** | **[Awesome](https://github.com/MiniValine/AWESOME-MiniValine)**
 
 
 
@@ -29,45 +35,14 @@
 
 ## License
 
-[GPL-3.0](https://github.com/MiniValine/MiniValine/blob/master/LICENSE)
+[GPL V3 or later](https://github.com/MiniValine/MiniValine/blob/master/LICENSE)
 
 
-
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FMiniValine%2FMiniValine.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FMiniValine%2FMiniValine?ref=badge_large)
-
-
-
-本项目将原始 `LICENCE` 由 `GPL v2 or later` 升级为 `GPL V3 or later` 重新分发.
-
-### 原始 Copyright Notice
-
-https://github.com/xCss/Valine/blob/3fbddbf71dff61d35ccdfb18f39cbf4ac679330c/LICENSE#L293-L309
-
-```
-    Valine
-    Copyright (C) 2017-2018  xCss
-
-    This program is free software; you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation; either version 2 of the License, or
-    (at your option) any later version.
-
-    This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
-
-    You should have received a copy of the GNU General Public License along
-    with this program; if not, write to the Free Software Foundation, Inc.,
-    51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
-
-```
-
-### MiniValine's Copyright Notice
+## Copyright Notice
 
 ```
     MiniValine
-    Copyright (C) 2019-now  MiniValine Team
+    Copyright (C) 2019-present  MiniValine Team
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -81,5 +56,20 @@ https://github.com/xCss/Valine/blob/3fbddbf71dff61d35ccdfb18f39cbf4ac679330c/LIC
 
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <https://www.gnu.org/licenses/>.
-
 ```
+
+## 授权链
+
+MiniValine version 6.x 基于 ohhho kernel 开发
+
+[MiniValine](https://github.com/MiniValine/MiniValine) [2021.4.18](https://github.com/MiniValine/MiniValine/tree/f2c5b97ed1571fc34b18f44b1db303089061388a)-present [GPLV3 or later](https://github.com/MiniValine/MiniValine/blob/master/LICENSE)
+
+[ohhho kernel](https://github.com/MHuiG/ohhho) [2021.3.7](https://github.com/MHuiG/ohhho/tree/f8896843ee3dfb5c0b4213a0f7a57fa96b4d10ee)-present [GPL-3.0 Only](https://github.com/MHuiG/ohhho/blob/master/LICENSE)
+
+[MiniValine](https://github.com/MiniValine/MiniValine) [2020.3.10](https://github.com/MiniValine/MiniValine/tree/c572885421f5818b13931ba3023689897d41df16)-[2021](https://github.com/MiniValine/MiniValine/tree/e006726baf526478d890429b50c376b9e7c534a2) [GPLV3 or later](https://github.com/MiniValine/MiniValine/blob/e006726baf526478d890429b50c376b9e7c534a2/LICENSE)
+
+[Valine-Ex](https://github.com/DesertsP/Valine) [2017.8.13](https://github.com/DesertsP/Valine/tree/80caa2600f4cf92b84ec1b9815077748dd16dcbf)-[2019.5.28](https://github.com/DesertsP/Valine/tree/71090fed6e336ffded7d3e56f0909c8443c2bf8a)  [GPL-2.0 Only](https://github.com/DesertsP/Valine/blob/71090fed6e336ffded7d3e56f0909c8443c2bf8a/LICENSE)
+
+[Valine](https://github.com/xCss/Valine) [2017.8.3](https://github.com/xCss/Valine/tree/e1fb38559efa085866f531b473f4050001b97b83)-[2017.8.13](https://github.com/xCss/Valine/tree/cefd272eacdea665f20bc1eeeb18780984896eb2) [GPL-2.0 Only](https://github.com/xCss/Valine/blob/cefd272eacdea665f20bc1eeeb18780984896eb2/LICENSE)
+
+向以上开源项目以及贡献者致敬！
