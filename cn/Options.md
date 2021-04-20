@@ -13,7 +13,7 @@ MiniValine 自 version 6.x 起回归极简主义！ 因此 6.x 移除了 5.x 的
 
 > 一些插件可能事先写在实现逻辑里面了，不需要再添加这项，如果再添加可能导致错误, 
 >
-> 比如 [hexo-next-minivaline](https://github.com/MiniValine/hexo-next-minivaline) | [docsify-minivaline](https://github.com/MiniValine/docsify-minivaline) **不要**添加这个选项
+> 比如 [docsify-minivaline](https://github.com/MiniValine/docsify-minivaline) **不要**添加这个选项
 
 | Option   | type     | Required or Default                      | description                      |
 | -------- | -------- | ---------------------------------------- | -------------------------------- |
