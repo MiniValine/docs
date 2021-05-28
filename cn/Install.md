@@ -11,7 +11,7 @@ MiniValine 6.x 仅提供了一种安装部署方案，共分为三步，其中�
 
 ### 安装部署 MiniValine-Admin-API-Vercel【必需】
 
-按照常理，仅需要部署下面要说的 MiniValine-Admin-CFWorker 即可，但是 CloudFlareWorker 开发平台存在一些局限性，因此需要额外部署MiniValine-Admin-API-Vercel 以供 MiniValine-Admin-CFWorker 调用相关API,另外您可以魔改MiniValine-Admin-API-Vercel已达到自己的需求。
+按照常理，仅需要部署下面要说的 MiniValine-Admin-CFWorker【可选】与 ohhho kernel 【必须】即可，但是 CloudFlareWorker 开发平台存在一些局限性，因此需要额外部署MiniValine-Admin-API-Vercel 以供 MiniValine-Admin-CFWorker【可选】与 ohhho kernel 【必须】调用相关API,另外您可以魔改MiniValine-Admin-API-Vercel已达到自己的需求。
 
 #### 配置Github仓库【必需】
 
@@ -126,7 +126,6 @@ blog 即 blog url
 | USERNAME    | 管理系统用户名                                               |
 | PASSWORD    | 管理系统密码                                                 |
 | OHHHOPATH   | 该worker的访问路径                                           |
-| APIPATH     | MiniValine-Admin-CFWorker的访问路径                          |
 | APIURL      | MiniValine-Admin-API-Vercel获得的部署好的网站地址            |
 
 注意配置所有路径最后不要加`/`
@@ -197,11 +196,11 @@ blog 即 blog url
 
 此处域名后面必须加`/*`
 
-ohhho kernel 自带了一个简易的管理系统，管理员后台地址：https://xxx.workers.dev/ohhho/，不过由于是内核所以没有集成通知邮件发送模块 和 Akismet-API 模块，这意味着MiniValine-Admin-CFWorker的配置是可选的,但是MiniValine-Admin-API-Vercel的配置是必须的。
+ohhho kernel 自带了一个简易的管理系统，管理员后台地址：https://xxx.workers.dev/ohhho/ ，不过由于是内核所以没有集成通知邮件发送模块 和 Akismet-API 模块，这意味着MiniValine-Admin-CFWorker的配置是可选的,但是MiniValine-Admin-API-Vercel的配置是必须的。
 
 您可以魔改MiniValine-Admin-CFWorker配置您自己的MiniValine-Admin-CFWorker的功能；这里开发MiniValine-Admin-CFWorker只是举一个例子。
 
-将 ohhho kernel 的路由地址 填写到前端配置的serverURL中即可（https://xxx.workers.dev）
+将 ohhho kernel 的路由地址 填写到前端配置的serverURL中即可（这里填写您的自定义域名，填写https://xxx.workers.dev 将无法连接到MiniValine-Admin-CFWorker）
 
 注意：配置项比较多，建议再核对一下配置。【必需】
 
