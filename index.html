@@ -14,9 +14,7 @@
     <link rel="icon" href="/assets/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="./assets/style.css">
     <title>MiniValine - A simple and minimalist comment system based on Leancloud.</title>
-    <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5/lib/darkmode-js.min.js"></script>
-    <script src='https://cdn.jsdelivr.net/npm/minivaline@5/dist/MiniValine.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/npm/minivaline@6/dist/MiniValine.min.js'></script>
 </head>
 
 <body>
@@ -43,21 +41,11 @@
     <div class="copy">
         &copy; since 2020 <a href="https://github.com/MiniValine/MiniValine" target="_blank">MiniValine</a>
     </div>
-    <script src="./assets/js.js"></script>
     <script>
 		new MiniValine({
 			el: '.comment',
-			mode: 'xCss',
-			appId: 'MEEC7WU3MbE2gfGU0apei89u-MdYXbMMI',
-			appKey: 'NQ91iwhxPcrPoAmSu4wpEJ8g',
 			placeholder: 'Write a Comment',
-			lang: 'en',
-            visitor: true,
-            RecordIP: true,
-            region: true,
-            md: true,
-            math: true,
-            enableUA: true,
+			serverURL: 'https://mv.mhuig.cf',
 	   });
     </script>
 </body>
