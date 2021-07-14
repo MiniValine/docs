@@ -150,7 +150,9 @@ blog 即 blog url
 
 #### 安装部署 ohhho kernel【必需】
 
-先下载，你可以直接从[Github](https://raw.githubusercontent.com/MHuiG/ohhho/master/worker/dist/worker.js)上下载，也可以用[JSdelivr](https://cdn.jsdelivr.net/npm/ohhho@latest/worker/dist/worker.js)加速下载，复制里面的内容。
+目前 ohhho@0.0.23 为稳定版本.
+
+先下载，你可以直接从[Github](https://raw.githubusercontent.com/MHuiG/ohhho/f75953ef38774b5f28d4510762c64bdeb90ef8fd/worker/dist/worker.js)上下载，也可以用[JSdelivr](https://cdn.jsdelivr.net/npm/ohhho@0.0.23/worker/dist/worker.js)加速下载，复制里面的内容。
 
 新建一个Worker，，修改左上角三级域名【可选】,点击保存并部署。
 
